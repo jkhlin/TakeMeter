@@ -263,17 +263,35 @@ pre-labelling. Swap in your own if reviewing turns up better ones.*
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, fine-tuned for 3-way classification
+(`analysis`, `hot_take`, `reaction`).
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, 128 tokens per post,
+seed 42.
 
-**Anything I changed from the defaults, and why:**
+**Trained on:** CPU (no GPU), torch 2.14.1+cpu. `results.json` records this as
+`"device": "cpu"`. Training took about 90 seconds.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Anything I changed from the defaults, and why:** Nothing. All settings are the
+notebook's defaults. I ran sections 1 to 5 once, with Claude executing the
+notebook's code cells in order from a script using the project's `.venv`, not by
+clicking through the notebook. The notebook file itself wasn't changed, so it
+has no saved outputs from this run. The dataset check printed `Data looks fine`
+with no `[FIX ME]` or `[look at]` lines.
 
+**Split sizes:** 146 train / 32 val / 32 test, stratified 70/15/15 on seed 42.
 
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `analysis` | 37 | 8 | 8 |
+| `hot_take` | 64 | 14 | 14 |
+| `reaction` | 45 | 10 | 10 |
+
+No label has fewer than 8 in the test split, but `analysis` has exactly 8, and
+the notebook's own threshold for a jumpy metric is "fewer than about 8". One
+wrong prediction on `analysis` moves its recall by 12.5 points, so its F1 will
+swing between seeds in unit 6. (My criteria assumed about 6; it's 8, so the
+estimate was a little low.)
 
 ---
 

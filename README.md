@@ -42,7 +42,28 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
+**Community:** Hacker News (news.ycombinator.com). A "post" is a top-level
+comment on a front-page story. It's public, needs no login, and the quality
+varies a lot, from one-line reactions to paragraphs with numbers in them.
+Reddit blocked automated access, so I used Hacker News's open API instead.
 
+**Candidate distinctions from reading 40 random comments** *(Milestone 1. I'll
+replace this once the labels are settled.)*
+
+1. **Does it contain a specific, checkable detail that does work in the
+   argument?** A number, a named product or version, a date, something that
+   happened to the writer. HN id 48510899 (16 hours with a model, one hour lost
+   to a git rebase/stash failure) does; 26290787 ("This is the wrong way to
+   go.") doesn't. About 6 of the 40 did.
+2. **Is it a claim, or a feeling?** Some comments assert something about the
+   world, supported or not (23860020, 29877759). Others only express how the
+   writer feels about an event (the RIP comments, 41402920). Tone doesn't
+   separate them, since both can be confident. Whether someone could disagree
+   with the comment does.
+3. **Is it a contribution to the discussion at all?** Questions, bare links,
+   quotes and notes about the site (39543429, 44262985, 12719616) make no point
+   either way. About 15 of the 40. Decision needed: give these their own label
+   or filter them out before labeling.
 
 ---
 

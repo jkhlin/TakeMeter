@@ -1,0 +1,655 @@
+text,label,note
+"We lost a lot when live-leak went away too to be honest.. 99% of it is things I would never want to watch again, but the one that sticks out in my mind is the video footage from the phones of the korean highschool students who waited to drown to death on the instructions of the captain of the Sinking Sewol ferry.",analysis,"hn 35478081; pre-labelled, checked; HARD: emotional, but the Sewol footage is the specific example behind 'we lost a lot' (analysis vs reaction)"
+"This is disgusting. I really hope Uber is an outlier, and not the norm, when it comes to this level of sexist elitism. If I had to deal with that kind of harassment and backwards pressure at work as a woman I would probably end most work days trying not to either cry or quit.
+
+That manager should have been fired on the very first offense Susan reported. ""Don't proposition your colleagues for sex, especially on company comms, ESPECIALLY on the day she starts her job"" is an implicit rule that doesn't need explaining. How isn't this lawsuit material? Are the employment contracts really that binding?",hot_take,"hn 13728585; pre-labelled, checked; was the cold draw but not labelled unaided; HARD: outrage at a company ('disgusting', 'should have been fired'); a claim about another party, not just a feeling (reaction vs hot_take)"
+How can one be so untactful and 'proposition' via text chat? Someone may take screenshots and go to HR... Weird.,hot_take,"hn 13694679; pre-labelled, checked"
+"This is one of the best examples I've seen on ""fighting for the users"", the rule that every developer should follow.",reaction,"hn 19116414; pre-labelled, checked"
+"the size of this comments thread and the amount of information on it is directly proportional to the even bigger hole you are getting into. You either come with a well defined plan of revenue for a company, so you can fulfil their Legal statement or you will only transmit DRM free content.",hot_take,"hn 19632501; pre-labelled, checked"
+"They arrested Inigo, not DPR (also there's been 2 DPRs so far, it was planned that DPR changed once a year.)
+
+Not sure how the case will go, but I think that you can't say beyond a reasonable doubt Ross is DPR (Because, well, he's not.)
+
+I'm sure he'll get great lawyers that can get him out of this.",analysis,"hn 6491431; pre-labelled, checked"
+"This is amazing. This took me back to the 90's when I was learning BASIC by scrounging for books in our school library. I grew up in Oman and there weren't too many programming resources. So I had to make do with random BASIC books that were often in different dialects (Apple BASIC for example).
+
+I also reinvented the wheel many times and wrote a bunch of silly little programs. It was a great and fun experience and this story really took me back.",reaction,"hn 8753192; pre-labelled, checked"
+"Sometimes, I really wonder how the advertising industry actually earns their bread.
+
+By which I don't mean how they provide a service, in exchange for monetary compensation, in exchange for goods (bread).
+
+I mean I wonder how they earn it.",hot_take,"hn 14106019; pre-labelled, checked"
+"TikTok and many popular Chinese apps, including Taobao, Baidu, and Alipay, to name a few, snoop clipboard contents, because Tencent censors and forbids almost all kind of links sharing in WeChat and QQ.
+
+https://news.ycombinator.com/item?id=23654345",analysis,"hn 23654350; pre-labelled, checked"
+"I really like how you keep updating the site throughout the day based on the feedback you are getting here. Also, the suggestions made by users going directly to the creator of a project is pretty awesome. Good job.",reaction,"hn 10762003; pre-labelled, checked"
+It's hard to justify a blog post about unnecessary and distracting visual elements when the you're peering at the article through a freaking blizzard on the screen lol.,hot_take,"hn 46508172; pre-labelled, checked"
+"When I see $5 all I can think about is a massive cluster of these working together with something like Apache Mesos (http://mesos.apache.org/). The Raspberry Pi Zero, due to low cost, low power requirements (Around the 160mA mark (0.5/0.7W!) and small form factor, could be the future of data centres.
+
+You could literally build a 100Ghz machine for $500.",analysis,"hn 10634512; pre-labelled, checked; HARD: real power and price figures, but the '100GHz machine' conclusion doesn't follow from them (analysis vs hot_take)"
+"I would say any tech or dev job in a non-tech focussed company.
+
+My best job was a large publisher, part of the dev team. It was super relaxed and sometimes would go weeks with minimal to no work, and nobody cared.
+
+Since the focus is not on tech, the stack is very stable and development is very slow and considered.
+
+Just avoid any company whose focus is tech or the website/app is the main revenue driver.",hot_take,"hn 26735916; pre-labelled, checked; HARD: personal job anecdote without particulars (analysis vs hot_take)"
+"I just don't understand. From this report, all persons involved look like kindergarten kids, herself inclusive. What's wrong with this world.",hot_take,"hn 7443237; pre-labelled, checked"
+"I love markdown. I even created my own version which I have become addicted to -> http://blackstag.com/markdown. I'm fairly confident I will be the only one to appreciate my personal version, but hey - It's the ugly child I have come to love.
+
+I'd certainly be interested in switching over to their version, provided some of the noted kinks get worked out.",reaction,"hn 4702363; pre-labelled, checked"
+I don't think it is an original observation but Steve Jobs chose a very capable and worthy successor. Tim Cook gets more impressive each time you hear anything about him.,hot_take,"hn 8539283; pre-labelled, checked"
+"Has anyone tried to add up the track file size from the metadata dump?
+
+In spotify_clean_track_files.sqlite3:
+
+ SELECT count(*), sum(filesize_bytes) FROM track_files;
+
+ 255966403|15970064861274
+
+That's only 14.5 TiB, nowhere near 300 TiB. What makes up the other 285 TiB of content?",analysis,"hn 46366287; pre-labelled, checked"
+I'm slightly surprised they haven't gotten rid of the stellated hexagon artifacts with software.,reaction,"hn 32079320; pre-labelled, checked; HARD: surprise, but about a specific technical artifact (reaction vs hot_take)"
+"> Amazon Glacier is designed to provide average annual durability of 99.999999999% for an archive.
+
+That's pretty impressive. I wonder how many bytes they lost to lose that .0000000001% of data.",reaction,"hn 4415082; pre-labelled, checked"
+Programming team of the future … 9 lawyers and 1 programmer. I think we are getting there.,hot_take,"hn 37273002; pre-labelled, checked"
+"I don't know. I have been trying to hire an experienced C++ developer for 6+ months and the market seems to be dry.
+
+And we don't play stupid question games when interviewing. Candidates are asked to review and find bugs in 2 pages of really bad C++ code. And to walk us through how they would solve a more high level production problem.
+
+I get plenty of CVs from Python or Java developers who thinks that knowing Python or Java makes them experienced C++ developers. Eh no it doesn't.",analysis,"hn 41002545; pre-labelled, checked"
+I wish Reddit would make their planned anti SOPA page available as a template for other sites that wish to show their solidarity and join them on the day.,hot_take,"hn 3451415; pre-labelled, checked; HARD: a wish about what someone should do (hot_take vs reaction)"
+">We are of course willing to responsibly disclose the specific vulnerabilities we know about to Cellebrite if they do the same for all the vulnerabilities they use in their physical extraction and other services to their respective vendors, now and in the future.
+
+Mwahahahaha. Tell us how you hack our app and everyone else's, and we'll tell you how we hacked yours.
+
+The middle finger is strong with this one.",reaction,"hn 26970298; pre-labelled, checked"
+"Interesting enough Russia adopted DST changes following Europe in 1981-4 (then as USSR) and finally dropped it in 2014. Looks like a data point for DST efficiency study.
+https://en.wikipedia.org/wiki/Time_in_Russia",analysis,"hn 18022834; pre-labelled, checked"
+It’s enlightening that the mob that uses Apple’s locked down devices (which is “cool” instead of “gross”) is able to fire RMS over his comments on semantics; The Nash equilibria are clear.,hot_take,"hn 21084851; pre-labelled, checked; was the cold draw but not labelled unaided"
+"I am so excited by the Cybertruck. I drive a Toyota minivan now and my lease is up in the fall of 2021 so the timing is perfect. To me this is the perfect minivan alternative and my husband is thrilled with the hauling capacity, plus the specs. Fun to drive, big range and looks cool (but I could not care less what it looks like since I drive a minivan now!)and the price is the real hook. No gas needed six seater electric truck that drives like a Porsche? Sold. So you can get the truck market but also the minivan market. That’s huge. And my family skis and snowboards so it’s perfect for going to the mountains. Total all purpose vehicle for an active family. What is not to love?",reaction,"hn 21636044; pre-labelled, checked; HARD: excited and personal, but also says the price is the real hook (reaction vs hot_take)"
+"I have a MacBook from 2015 and an iPhone 7 that I've been avoiding upgrading because I wasn't sure if I wanted to remain in Apple's walled garden. This issue was a huge sticking point for me, and it's an incredible relief they're closing the loop. Guess I'll be giving them a bunch more money in the near future!",reaction,"hn 33915076; pre-labelled, checked"
+"The interesting part of the news is this:
+
+""""""
+The sources said the program was discovered by Yahoo's security team in May 2015, within weeks of its installation. The security team initially thought hackers had broken in.
+""""""
+
+this is from Reuters: http://www.reuters.com/article/us-yahoo-nsa-exclusive-idUSK
+
+I can imagine being in that security team :) But there is also something more profound in this about secrecy in our times.",reaction,"hn 12641956; pre-labelled, checked; HARD: quotes a specific Reuters passage but the comment is about how it feels (analysis vs reaction)"
+This post and comments here made me leave work early to go home and hug my kids extra tight this evening.,reaction,"hn 4918750; pre-labelled, checked"
+"I felt this kind of heartbreak when I found that freenode was gone, the channels got scattered and became unrecognizable. That era of computing that you were a part of, you knew and were comfortable with for decades is just yanked away.",reaction,"hn 47958373; pre-labelled, checked; was the cold draw but not labelled unaided"
+"""You can buy candies"". We don't have candies. How's that a problem? Obviously it's a logistics problem. It seems like the anger being driven to the wrong people.",hot_take,"hn 25954980; pre-labelled, checked"
+"You called us paranoid whacos when we blew the whistle on google and other tech companies becoming too big.
+
+You made this bed. Now damn well lie in it, and think of England.",hot_take,"hn 18554183; pre-labelled, checked"
+Another Klein bottle article on HN? Smells like advertising to me.,hot_take,"hn 27695404; pre-labelled, checked"
+"I've been thinking about migration out of G* for a while already and this post was a breaking point to start the migration. Thank you!
+
+I've purchased personal domain with my country code and picked Fastmail as provided for now (since many folks here gave good feedback).",reaction,"hn 26074917; pre-labelled, checked"
+"I agree that devices/internet/AI can pull you away from the life around you. In my apartment building, though, we have a group chat to coordinate laundry schedules for the laundry machines on the first floor. It started during Covid and continued even after and with new people moving in. It's turned into a nice, helpful conversation about not only laundry but packages and street parking and more. It's helped to get to know the neighbors better than without.",analysis,"hn 48324908; pre-labelled, checked"
+"I'm still running the Sony Xperia Compact Z1. Have upgraded it twice with an iPhone 7 and a OnePlus. Gave both away away to people who enjoyed them WAY and WAY more than I did.
+
+Think I'm going to carry my Z1 till it literally stops working. So far, I can still do 1 to 1.5 days with my battery easily.",reaction,"hn 31421743; pre-labelled, checked; HARD: specific battery figure, but no argument, only contentment (reaction vs analysis)"
+"Today, in one of the four cities that birthed the very first connections made to the proto-internet (Berkeley), I am finally getting a second broadband option other than Comcast.
+
+I'm an hour in to a 4 hour window waiting for my Sonic install. I am so happy to finally be have a choice.",reaction,"hn 21009436; pre-labelled, checked"
+"It's a manufactured crisis, the whole ""pace the frontier"" call.",hot_take,"hn 49822824; pre-labelled, checked"
+Thanks so much for the 'skip this flamewar button' aka the collapse button.,reaction,"hn 12079992; pre-labelled, checked"
+"I think this is more or less the formula for calculating monthly costs (corrections welcome):
+
+0.01S+max(0,7.20*(R-0.0017S)/4)
+
+S is number of GB stored
+
+R is biggest retrieval in the month
+
+4 is the average number of hours a retrieval
+
+For an example with 10TB storage (replace 10000 to change): http://fooplot.com/plot/4pu7u2gpox
+
+x is biggest retrieval in GB, y is $/month",analysis,"hn 4414131; pre-labelled, checked"
+"I'm so glad these videos are still on there. As much as I consume youtube now, this brings back memories of when it was literally ""YOUtube"". Truly a glorious time!",reaction,"hn 42115326; pre-labelled, checked"
+"Really? I'm so surprised to see so many ""Awesome! Go for it"" answers to this.
+
+While I admire the dedication and focus it takes to stay up to such routine, I am certainly concerned by the quality of life and the narrow mindedness of enforcing upon oneself to code on a daily basis. What about days off? Going out friends / family for a weekend or holidays? One would suggest to bring your laptop so you can stick to it? This is madness to me...
+
+I love to code, contribute to OS projects, do code for a leaving and for myself - but for nothing in the world I'd even attempt such thing.
+
+Setting yourself with goals is great and required to some extend but on a proper schedule. Going to the gym 3 times a week can be achieved without being complexed by the fact you didn't go there every single day - and yet you can substantially improve yourself. I don't envy those buffy dudes that stick to it.
+
+I'll stick to enjoying evenings with my wife, do code maybe 1 or 2 times during the week days, spend an extra day on more complex issues on the week end, and rest for the last day. Just saying.",hot_take,"hn 7571210; pre-labelled, checked"
+"I've tried to recreate OP experiments, but he seems to have cherry picked commands that are successful.
+
+Same:
+
+I want you to act as a Linux terminal. I will type commands and you will reply with what the terminal should show. I want you to only reply with the terminal output inside one unique code block, and nothing else. Do no write explanations. Do not type commands unless instruct you to do so. When need to tell you something in English I will do so by putting text inside curly brackets {like this}. My first command is pwd.
+
+Just basic commands `1s`, `top`, `uname` returns blank. More elaborated commands just guess what's output should look like. There is no actual understanding of the VM, but just cherry picked guesses.",analysis,"hn 33858581; pre-labelled, checked"
+"Huh, this was the reason why my laptop was freezing every time. I thought it was the fact that my laptop got too old and so I wiped my laptop and installed Arch.",reaction,"hn 25128033; pre-labelled, checked; HARD: a personal event, with no claim beyond 'huh' (reaction vs analysis)"
+"While I really like the idea of presenting the subject of privacy and big data in a simple and intuitive way, and while I think that there is merit to the global warming metaphor, I'm worried that it might distract from the message.
+
+Sadly, climate change has now become politicized, and it would be a shame if the same happened here.",hot_take,"hn 24638774; pre-labelled, checked"
+"Last I checked, 'hero' mentions were outnumbering 'traitor' mentions on Twitter 2 to 1.",analysis,"hn 5866263; pre-labelled, checked; HARD: a checkable-sounding stat ('2 to 1') with no source (analysis vs hot_take)"
+"Wow, so sad to see it go... this was one of my main websites in the early days of the net. Helped me build so many computers and loved the community. I even built a website with some of the Anandtech team that consolidated reviews across the net during college. Sad day. Change be changing.
+
+I am disturbed by the death of long-form content happening. Google is failing.",reaction,"hn 41409897; pre-labelled, checked; HARD: sad about the site but also claims Google is failing (reaction vs hot_take)"
+"Let's work hard to make the rich man rich. It is poisonous to only do your work. You need to sacrifice everything for the well being of the man
+This mentality should be banned from everyone's lives",hot_take,"hn 41566179; pre-labelled, checked"
+"It's grotesquely insecure and not authoritative to rely on rando, unsecured WHOIS in the clear scraping contact details to ""authenticate"" domain ownership rather than ask the owner to provide a challenge cookie by DNS or hosted in content.",hot_take,"hn 41519813; pre-labelled, checked"
+"- Freedom Hosting is down
+
+- SilkRoad is down
+
+- the Atlantis drug store is down
+
+...all of that leads me to believe Tor hidden services are very, very unsafe to use, since all bigger illegal services that used them have been brought down eventually.",analysis,"hn 6488119; pre-labelled, checked"
+"And by ""Home"", Twitter means that it expects all employees to move into the office.",hot_take,"hn 23176294; pre-labelled, checked"
+"We should have third-party .dll injection plugins.
+
+Microsoft missed a lot by not keeping ManifestV2 in Edge.",hot_take,"hn 43446056; pre-labelled, checked"
+"I don't really believe that this can all be true, if only because I find it very unlikely that GitHub screwed up that badly from an HR perspective, especially one involving the founder.
+
+There is probably some measure of truth to it, but for it to be totally true would be a massive failure on GitHub's part.",hot_take,"hn 7414799; pre-labelled, checked"
+"Indeed what Visa did is not moral, but this is the law of the Jungle, no matter how despicable they find their opponents to be, losing is losing. They need real revolution to win the game.",hot_take,"hn 4399091; pre-labelled, checked"
+"100% this, I've been saying this for years. A touchscreen is a horrible interface for the situation. You need to take your eyes off thr road, with a tactile button it can be felt, found, and actuated without sight.",hot_take,"hn 32525701; pre-labelled, checked"
+"my son said it sounds more like a drug than a piece of technology I think this is for ""whales"" people who have lots of money and time to spend on games.",hot_take,"hn 7480230; pre-labelled, checked"
+"Good to see this type of fraud being called out.
+
+I once worked for a company where we were tasked to create ""fake users"" to make it look like a website was getting way more traffic than it actually did on the premise of doing an ""extended load test"".
+
+Come to find out years later the person commissioning the fake users was trying to sell the website and wanted to validate their asking price -- with fake users and fake traffic.
+
+Long story short it didn't work out that well because eventually the algorithm running the fake users got entirely blocked out by whoever was the host at the time and the guy wasted his money.
+
+I just wonder how many times things like this have happened and people were very successful from it.
+
+Fake likes and fake posts by fake users who then are clicking real ads seems like the landscape nowadays =/",analysis,"hn 25632489; pre-labelled, checked; was the cold draw but not labelled unaided"
+"I hope this doesn't encourage these children to grow up and start using Kafka willy-nilly in places that it's not meant to be used.
+
+It's often hard to find a legitimate use case for Kafka/RabbitMq/etc. where a much simpler solution won't do.",hot_take,"hn 27546028; pre-labelled, checked"
+"Chaotic. Not eccentric.
+
+This week Musk banned journalists and then lied about it, suggested the former head of trust & safety was a child abuser (he had to leave his home), stopped paying bills and, announced the ridiculous policy to ban all links to other social platforms before abruptly changing his mind.
+
+Lastly, he launched a Twitter poll asking whether he should remain CEO, and then says the person who takes on the job would be a fool.",analysis,"hn 34084871; pre-labelled, checked"
+"Again, for those complaining about price - the current (and far less capable) Microsoft HoloLens is also $3500. I've personally used and interacted with the HoloLens and was thoroughly impressed, however the leaps in optics & tracking Apple has pulled off make the Vision Pro quite compelling.",analysis,"hn 36233459; pre-labelled, checked"
+It's a matter of time before this can compete with Vocaloid.,hot_take,"hn 14186695; pre-labelled, checked"
+"Version that runs on the CPU: https://github.com/krychu/llama
+
+I get 1 word per ~1.5 secs on a Mac Book Pro M1.",analysis,"hn 36790171; pre-labelled, checked; HARD: a pointer plus a measurement (1 word per 1.5 secs on an M1) (analysis vs scope)"
+"This is a denial of service attack. It is ""cheating"" and playing dirty.
+
+As a matter of principle, I will never use Uber.",hot_take,"hn 8231263; pre-labelled, checked"
+"Opus 5.5 is a game changer for me. Super-heavy and deep algorithmic work on a pet project of mine - managed to produce 5% weekly usage in 8 hours. With Opus 5 - interspersed with Fable for supervision and guidance - I'd have used 12-15% in the same time. Mostly void of claudisms; and the results actually work, on a level that's almost on par with Fable.
+
+Impressed.",analysis,"hn 49821774; pre-labelled, checked"
+Basically whether it’s rational to dump his stake in Twitter to you or me doesn’t matter. He Carries enough influence that investors will spook and it may trigger a sell off. It’s possible Dorsey knew this was coming and parag is enjoying the leftovers,hot_take,"hn 31046625; pre-labelled, checked; was the cold draw but not labelled unaided"
+The core issue here is that there is no included standard package in Javascript. It happened because Javascript did not have authoritative implementation when it first began. Next ECMA should require to pack some batteries in to avoid this micro-module hell.,hot_take,"hn 11360403; pre-labelled, checked"
+"I expected the thread to end thusly:
+
+Aliens: ""FOR ALL THIS YOU MUST DIE.""
+
+Humans: ""Fair enough""",reaction,"hn 33002083; pre-labelled, checked; HARD: a joke with no claim (reaction vs scope)"
+"It's also neat because you can tell where the mountains are. They're the sections where the wind was pretty slow, and then it speeds up and then slows down again. You can see it over the Rocky Mountains.",analysis,"hn 3768166; pre-labelled, checked"
+"This article is so good. My favorite quote:
+
+""The actual goal of any “behavioral interview” or “culture fit” estimation is simple, but nobody ever lays it out. The goal of culture checking is only: determine how a candidate handles the tradeoffs between progress vs. kindness.""",reaction,"hn 41002179; pre-labelled, checked"
+This is fantastic positive news and I think it will surprise many people (including me) that this was achieved with the involvement of a huge mainstream corporation (Microsoft) under the Trump administration. Congratulations Github.,reaction,"hn 25656736; pre-labelled, checked"
+"This is ridiculous click-bait, and it wouldn't surprise me if the main point was to just come up with a headline that would go viral and drive people to their website which conveniently has an option to donate to their ""legal fund"".
+
+I mean, come on. Do I like that they are making use of browser fingerprinting? Not really. But to make it sound like they are ""illegally"" scanning my computer is ridiculous.",hot_take,"hn 47622016; pre-labelled, checked"
+"I'm actually kind of bothered by this.
+
+I was about to release signups for a private beta of my current project, but apparently that no longer fits the formal criteria of ""Show HN.""
+
+Disappointing to say the least.",reaction,"hn 7986665; pre-labelled, checked; was the cold draw but not labelled unaided"
+"> Oh wait, can't download it for offline reading. What if I'm on a plane?
+
+My primary use of a Kindle has been 15+ minutes off the nearest paved road into the woods, very definitely offline. Who decided on-demand downloading 5 pages at a time was good enough?",analysis,"hn 45647832; pre-labelled, checked; HARD: concrete experience but it is a complaint (analysis vs hot_take)"
+"It’s their platform and they can do whatever they want. 
+They invested, they built it, they rule it.
+Whiny generation and their stupid EU laws...",hot_take,"hn 19399724; pre-labelled, checked"
+"I've been liking the new location /srv, where you stick things that are custom to that machine. No more trying to guess where the previous admin thought files should go (/usr/share? /usr/local? /usr/foo?).
+
+http://www.linuxtopia.org/online_books/linux_beginner_books/linux_filesystem/srv.html",reaction,"hn 3520674; pre-labelled, checked"
+"I created nearly the same presentation this week. It's good to see that I didn't miss much, though this one goes deeper, which I don't do on purpose. I'll probably send the attendee this presentation afterwards for those who want to go deeper, very cool!",reaction,"hn 15921018; pre-labelled, checked"
+"My main gripe is lack of memory. Since it has no sd card, it should have at least 128GB like the iPhone 6.",analysis,"hn 8477206; pre-labelled, checked; HARD: names a figure and a comparison (128GB, iPhone 6) but for a one-line gripe (analysis vs hot_take)"
+Makes you wonder why there were no plane hijacks since 9/11. TSA does not seem a credible prevention mechanism given how easy it is to go around it.,hot_take,"hn 41400553; pre-labelled, checked"
+Crazy how something so simple hits so hard. Always wild to see how much meaning people can pack into a minimal format.,reaction,"hn 46228538; pre-labelled, checked"
+"I had similar experiences working with the RAW data API's that appeared a few years ago in iOS. My photos were barely better than the stuff I would take with my old Nokia!
+
+I have a lot of respect they manage to get pictures to get to look as good as they do on phones.",reaction,"hn 46422034; pre-labelled, checked"
+"Many people here are pining for the old days of Google search where if you knew the operators and some tricks you could develop very specific queries and get a page that matches exactly.
+
+I remember those days too. It did feel like Google search skill was a super power. I also remember my non technical friends and family being pretty much unable to find what they were looking for online. Google did not turn their rambling approximate queries into the results they want.
+
+Now I find that although the precision of the old style is gone, Google is incredible at guessing what you want. Back in the day I might find the page I was looking for on the twelfth 'o' of 'Goooooooogle'. Now I rarely have to venture outside the top 3 results. I find that my family no longer needs my help to fast craft a search query.
+
+Isn't it possible that Google just made the choices that are better for the average user and left some of us advanced users out? If your response to that is ""they could leave me an advanced mode"", consider how much work it would be to maintain to serve a tiny customer subset.
+
+I think if you want a search engine for power users you want DDG
+
+Disclaimer: I work at Google but not on Search or anything close.",hot_take,"hn 16158645; pre-labelled, checked; HARD: own experience but only vague (""rarely venture outside the top 3""), so no particular checkable detail (analysis vs hot_take)"
+This would be even cooler if you could display wind speeds at different elevations above the ground. I am guessing that at a certain elevation you have higher winds that kites might be able to capture energy from.,hot_take,"hn 3769148; pre-labelled, checked"
+"Thinking more about this, it's also possible that the candidate failed on understanding what the screener wanted, and giving it to him.
+If the question was ""what signal does kill command send by default"" and the candidate hears ""what is the name of the kill signal,"" that's an indicator about important communication skills.",hot_take,"hn 12709668; pre-labelled, checked"
+"Just wanted to say good luck with everything to the team, and especially to neumino - you've personally helped me years ago on freenode writing some long ReQL queries when I first started experimenting with Rethink. :)",reaction,"hn 12656725; pre-labelled, checked"
+Still not as good as the OG 4.7 that got yanked and re-released with gimp mode enabled.,hot_take,"hn 48327204; pre-labelled, checked"
+"That's the trend for today. In two weeks the sentiment will be ""Oh screw it -- this is more involved than we though... we'll stay on GitHub for now and wait and see.""
+
+In short: it's the developers' version of #DeleteFacebook",hot_take,"hn 17226959; pre-labelled, checked"
+"The Uber incident has been known for almost a year. There are other instances, mostly undisclosed audits which have shown similar results. One audit revealed $220m in ad spend for a global brand with a +$500m budget had no impact on their results, it was vapor. On the finding of these results, they didn't want public embarrassment or the hit to their share price.
+
+Not everyone in the industry is fraud, not everyone in the industry is a huckster. But most of the industry is people talking up their game and creating a facade, from Brand CMOs to Pubs gaming their performance numbers. Fraud can be reduced, but few want to engage in the rigor and even less want to recognize actual/validated performance when the current fiction suits their purposes more easily.",analysis,"hn 25633930; pre-labelled, checked"
+"Taking up way too much space on mobile with the distracting CTA. Stopped reading when I couldn't close the popup on my phone.
+
+Might try again later on my desktop, if you promise to remove that at some point :)",analysis,"hn 17244155; pre-labelled, checked; was the cold draw but not labelled unaided; HARD: one concrete observation (can't close the popup on a phone) behind a complaint (analysis vs hot_take)"
+"I pay for a 100mb line. I consistently get on average 1.3mb.
+
+Broadband in the US is extremely poor quality and massively overpriced, and also fraudulently advertised.",analysis,"hn 21010285; pre-labelled, checked"
+"I actually found a nice SoundTouch 20 discarded on the curb, a couple months ago.
+
+I assumed it was probably discarded due to the frequent situation here, of student who is moving away, and who doesn't want the hassle or expense of moving things that don't fit in their luggage.
+
+Now I wonder whether it was discarded because the owner heard it was being bricked, so not worth moving with them.
+
+(Don't worry, I'm a curb Jawa master. I carried it home, realized it was IoT that required an icky closed app thing to use it, and so gave it to an MIT student. I just emailed them the URL of this good news. Possible bummer for the previous owner, though.)",reaction,"hn 46551180; pre-labelled, checked; HARD: a specific found-it-on-the-curb story, ending in wondering (reaction vs analysis)"
+"Wow, I can't believe the cavalier attitude to getting fired most of you have. If an employer has decided to fire you, then you've not only failed at your job, you've failed as a human being. Perhaps it's due to where in the US I live, but getting fired is not just separating from your job, it's a reason for your spouse to divorce you, and an acceptable reason for your bank/landlord to break the lease and kick you out of your home. If you get canned, your life is over.
+
+This is the power employers wield over their employees, and they're right to do it. The boss is giving you their hard-earned money to provide a product, and if you don't deliver you're lower than trash. If at any point you lay your head back you should all but feel a .45 pressed against the back of your skull. No matter how valuable you think you are to your employer, they have earned the right to end your life (in a figurative sense) if you displease them, or they find someone better than you.
+
+I think that's why we have such a good economy in the US, is employees have a healthy fear of their bosses. If anything, getting fired should be even worse than it already is. Why should workers get to underperform without more serious consequences?",hot_take,"hn 9163356; pre-labelled, checked"
+"Their ""Pro"" subscription gave only a handful of games a month of which were mostly shovelware. And no exclusive deals on games like Cyberpunk in a time where Microsoft is giving a huge library of games for the same amount on tech people were already happy to spend on. At that point I was just questioning how it was even still around.
+
+Saying that, the experience with cloud gaming itself was quite impressive, the fact that I can jump into Destiny 2 instantly on my Macbook felt like the future and I still believe it is. Clearly just isn't that affordable yet for anyone involved.",analysis,"hn 33034565; pre-labelled, checked"
+"As long as you are powerful, you can get away with almost anything. This goes from individuals to countries. Had China been weaker, it would have been invaded already .",hot_take,"hn 18146365; pre-labelled, checked"
+"Sooo basically it's an OSS version of Egenera's BladeFrame or VCE's vBlock.
+
+It's going to be tough sledding getting these into enterprise accounts.
+
+Best of luck.",hot_take,"hn 38043111; pre-labelled, checked; HARD: names two products as comparisons, but they support a side point and not the 'tough sledding' claim (analysis vs hot_take)"
+"My son was born with TEF/EA (TOF/OA in the UK) and needed a 4 hour surgery when he was 2 days old. The days before the surgery and the following month while he was incubated were agonising in ways I can’t even describe.
+
+Even though my story isn’t nowhere near your situation, I can vaguely relate. To the pain you feel, but also to the strength you seem to have found, to look for the positives because, deep down, you know that being positive and embracing the situation is the best you can do for your son.
+
+I’m sending all my love to you, your son and your family.",reaction,"hn 39053286; pre-labelled, checked; HARD: shares his own son's surgery, but the point is sympathy (reaction vs analysis)"
+"A dark pattern I just learned about with TurboTax, is that if you attempt to downgrade from paid to free when it is time to file (even without utilizing paid features), they force you to completely start over from scratch. For a lot of people, they may not even know they are in ""paid mode"" until it comes time to punch in the debit card.",analysis,"hn 30854573; pre-labelled, checked"
+TF2 was a great game and a halloween tradition for me and some friends. Unfortunately it became public-unplayable with all the bots going on and around.,reaction,"hn 43101779; pre-labelled, checked; HARD: nostalgia, plus a claim that bots made it unplayable (reaction vs hot_take)"
+"the key for me is a backend-as-a-service platform that i can reuse over and over. i used to be mainly a backend developer, but for more than 5 years now i have barely touched the backend code because it was designed to be reusable.
+
+i build SAP applications now because they make it easy to work with a reusable backend.
+
+for the rest of my system, i use basic LXC containers. no docker, or other container management system.
+
+deployment consists of setting up an instance of the backend, and generate the frontend as static files that can be hosted whereever.
+
+saltstack to control it all. done.",analysis,"hn 20994989; pre-labelled, checked"
+Yes!!! Now I can make my HN app! I don't like the ones that are on the market now (on Android platform),reaction,"hn 8425893; pre-labelled, checked"
+"Surely the easiest way to ensure net neutrality would be for the large players (google, facebook, etc) to band together and blacklist the networks for those providers who oppose net neutrality. Give them a taste of their own medicine.
+
+Of course, I suppose that as its Mozilla pursuing legal actions it goes to show how just little Google, Facebook, Amazon, etc, actually care about net neutrality.",hot_take,"hn 16166331; pre-labelled, checked"
+"""We have a great many writers that submit articles to us. We do our best to make sure stuff like this doesn't happen, but sometimes it does anyway. We'll fix it right now with credit and a link to your blog. Sorry about that, bro.""
+
+See? Fixed. Easy.",hot_take,"hn 3974399; pre-labelled, checked"
+These are pretty embarrassingly bad compared to what was already out there. They refuse to do so many simple things that are not remotely illegal or NSFW. So safe they're useless.,hot_take,"hn 44817883; pre-labelled, checked; was the cold draw but not labelled unaided"
+"Speaking as someone who has lived through dark days myself...
+
+I want to point out that we know that exercise helps with moods. The data is there. That being said, mood disorders are like autoimmune diseases of the emotions. Feeling blue or anxious or clinically depressed makes it harder to work out.
+
+And if you don't, you can easily beat yourself up for not ""fixing yourself.""
+
+On the other side of the fence, lots of people self-report that exercise helped them. And it did. But what sometimes gets missed is that they were already starting to get better, and what motivated them to exercise was that they were already feeling better.
+
+So it's not as simple as ""correlation does not equal causation,"" but there can be BOTH correlation and causation at work when you exercise and feel better.
+
+I say all this mainly because some folks have real trouble getting the motivation together to exercise when feeling down. Same with personal hygiene, appearance, eating well, and so forth. If anyone reading this knows intellectually that they ought to exercise, but just can't, please know that you are not unusual, this is what mood disorders do.
+
+But also know that there are many things that can help, so find the thing you can do—be it CBT, anti-depressants, whatever—and you will get yourself to a place where you are better able to do self-care like exercise.
+
+JM2C. My office walls are bereft of credentials in psychiatry.",hot_take,"hn 17747641; pre-labelled, checked; HARD: 'the data is there' gestures at evidence without citing any (analysis vs hot_take)"
+"> Chauvinistic, racist and homophobic attitudes were far too normal at Uber
+
+There should be a $10 fine every-time the wonderful word 'chauvinism' is misused. The law should nevertheless have an exception if the term is appropriately prefixed: 'male chauvinism' even if it hardly makes any sense (1).
+
+For those who are curious, the term comes from a soldier named Nicolas Chauvin who lived around the turn of the 18th/19th century. The guy was exaggeratedly nationalistic and subject to mockeries in the pop culture. A 'chauvinistic' person is a person that pushes the boundaries of jingoism and patriotism to the extreme and ends being grotesque.
+
+1:While tolerable, the term 'male chauvinism' makes no sense since a 'chauvinistic' attitude is supposed to contain a great deal of bad faith and demagoguery, and I'm afraid a lot of 'chauvinistic males' are actually sincere in their beliefs.
+
+Apparently the misuse started in the 70s, not only in english but in german too (would love to hear a german speaking person weight on this). It's not too late, we can save this word, we can prevent it from being the new 'bistro'!",analysis,"hn 13752756; pre-labelled, checked; was the cold draw but not labelled unaided"
+"""We demonstrate that the reasoning patterns of larger models can be distilled into smaller models, resulting in better performance compared to the reasoning patterns discovered through RL on small models. The open source DeepSeek-R1, as well as its API, will benefit the research community to distill better smaller models in the future.""
+
+From the research paper. Pretty interesting, and it's good news for people with consumer hardware.",analysis,"hn 42783705; pre-labelled, checked; HARD: quote from the paper carries the 'good news' claim (analysis vs reaction)"
+"Hurray! They finally built a machine that could replace my 2012 MacBook - a proper keyboard with fn keys, SD card slot and MagSafe. HURRAY!!!!",reaction,"hn 28941676; pre-labelled, checked; HARD: sarcastic hurray, a feeling (reaction vs hot_take)"
+"> You've read your last complimentary article this month.
+> To read the full article, SUBSCRIBE NOW.
+
+I'm surprised they haven't kicked off over my ad-blocker.",reaction,"hn 16725932; pre-labelled, checked"
+"I love, love, love the visual style of this game. It's so aesthetically pleasing!
+
+But even more than that, the game felt crisp. Movement, Mechanics, Voice Acting- all done fantastically. Just a 10/10 demo.
+
+Now make a full game like this! I assure you, it'll take the internet by storm.",reaction,"hn 40127040; pre-labelled, checked"
+"Most illustrative part:
+""Yahoo President Marissa Mayer and the company's legal team kept the order secret from the company's security team.""
+
+If you have to hide things from your own security team, it's pretty clear you're doing something very bad and you know it.
+
+And my imaginary hat off to Stamos for resigning when he found his boss betrayed user privacy and undermined security. If everybody had such level of integrity, doing shady stuff would be much harder.",analysis,"hn 12641844; pre-labelled, checked; HARD: the Yahoo quote carries the 'doing something bad' claim (analysis vs hot_take)"
+"I'm so disappointed, and it feels a little like Oculus sold their early investors (including Kickstarter folks) to Facebook.
+
+I mean, in the end it's theis (Oculus) decision what to do with their company, but i don't think Facebook is a good fit.",reaction,"hn 7472746; pre-labelled, checked; HARD: disappointment, but also says Facebook is a poor fit (reaction vs hot_take)"
+"I worked on a large site that used MongoDB. We hundreds of thousands of rows in one specific collection that were used as a log. We couldn't even query it without the whole database crashing.
+
+We moved that specific collection to MySQL, no problem and there was virtually no change in the data structure. Both were of course indexed.",analysis,"hn 18723681; pre-labelled, checked"
+"I think Salesforce is about to get much stronger competition from Microsoft's Dynamics CRM. If they connect Dynamics CRM with LinkedIn's massive database of orgs and professionals--a treasure trove for marketing and sales teams--and embargoes other CRM software from that data[0], I can see them taking market share from Salesforce.
+
+[0] LinkedIn did exactly this when it acquired Rapportive—another popular sales tool. They let Rapportive continue accessing LinkedIn data but blocked competitors from doing so.
+
+PS - They mention that, as a result of this acquisition, Office 365 users might be able to invite other professionals to collaborate on their documents or projects. It's interesting that they chose such a weak example, when it's clear there are much greater benefits they'll be able to offer. One I already mentioned, and many more are mentioned in this thread. Probably trying to keep competitors guessing?",analysis,"hn 11901964; pre-labelled, checked"
+"Was is most surprising (well, not really), is the apparent immaturity of Scala tooling (Ammonite), and Akka-based projects like Akka-HTTP and Akka-Stream. If you can get into very cryptic issues when using these project, it makes you reconsider the actual value you get from using a functional, type safe and on-paper concurrent language.
+
+Their proxy is one example where Rust will give the same capabilities as Scala and will be more robust, in the future, if it's not already the case today.",analysis,"hn 18723921; pre-labelled, checked"
+"> This isn't the case with love, to choose a cliché metaphor. If you break up with somebody, it just wasn't meant to be is the catch-phrase used rather than yo you must have been a shit partner to not have forced that relationship to work out.
+
+You'll find they say that a lot, actually. Just mostly to women.",hot_take,"hn 9160584; pre-labelled, checked"
+I guess curating unpolluted text is one of the new jobs GenAI created? /s,hot_take,"hn 41589196; pre-labelled, checked"
+"> Boelter said: “[Some] might say that this vulnerability could only be abused to snoop on ‘single’ targeted messages, not entire conversations. This is not true if you consider that the WhatsApp server can just forward messages without sending the ‘message was received by recipient’ notification (or the double tick), which users might not notice. Using the retransmission vulnerability, the WhatsApp server can then later get a transcript of the whole conversation, not just a single message.”
+
+Actually it is not that easy. Signal protocol [0] does not have any inherent delivery notification, but it is implemented in the application [1]. If attacker wants to deliver messages two-way without delivering receipts, it has to recognize them somehow. Of course you can try to guess by not delivering the first message after each delivery, but it seems too unreliable for a backdoor.
+
+[0] https://whispersystems.org/docs/specifications/doubleratchet/
+
+[1] https://support.whispersystems.org/hc/en-us/articles/212535538-How-do-I-know-if-a-message-has-been-delivered-",analysis,"hn 13394830; pre-labelled, checked"
+"It's too bad they didn't call it something else besides uv given there's already other ""uv"" named tools like: uvicorn, uvloop, pyuv - and those three almost hvae more in common with each other than the uv build/project tool. Then there's also libuv.",analysis,"hn 45777221; pre-labelled, checked"
+"Everyone's talking about initramfs as if it would replace a self-contained /. Have you ever been there? Usually all the relevant repair tools are missing and the shell gives you a headache. Its the point where you usually give up, walk into office and boot a rescue disc.
+
+So no, it does not replace a working /.",hot_take,"hn 3521843; pre-labelled, checked; HARD: argued from experience but no particular detail (analysis vs hot_take)"
+I think the next logical step for Apple is to use textual analysis on this HN thread to optimise for what the following change should be...,hot_take,"hn 21543874; pre-labelled, checked"
+"Nice guide, better comments, leaving this here for later reference.",reaction,"hn 11913626; pre-labelled, checked"
+"C'mon guys... The kid is not ill. He is angry and pissed of at the world. He has established different society norms for himself and his behaviour is off limits, but he is still in control of his brain and his body. And he understands what he's doing. He is not brain damaged. Don't treat him as one, cuz it would piss me off to.",hot_take,"hn 4931687; pre-labelled, checked"
+"Whoever profits from the private jail system is probably celebrating now the potential influx of new ""customers"" in their ""hotels"".",hot_take,"hn 31609469; pre-labelled, checked"
+"My grandfather was born in 1945 and worked as a programmer in East Germany and then unified Germany. He retired a few years ago.
+
+He started as a mathematicatian, and probably worked with computers professionally only after 1963.
+
+Programming in East Germany was .. interesting. For example, they used punch cards long after they were out of date in the west. My grandfather still has lots of punch card origami he did while waiting for his batch jobs to finish.",reaction,"hn 23376462; pre-labelled, checked; HARD: specific family story (East Germany, punch cards) but no argument (reaction vs analysis)"
+"#0016
+VENDOR: GOOGLE
+STATUS: FIXED (NOVEMBER 2022 UPDATE)
+REPORTED: JUN 13, 2022
+DISCLOSED: NOV 10, 2022 (150 DAYS)
+
+Project Zero only gives vendors 7 or 90 days before disclosure...
+
+The short version: Project Zero won't share technical details of a vulnerability for 30 days if a vendor patches it before the 90-day or 7-day deadline. The 30-day period is intended for user patch adoption.
+
+https://googleprojectzero.blogspot.com/2021/04/policy-and-disclosure-2021-edition.html
+
+Google should have given Mr. Schütz $200,000 alone for not revealing it.",analysis,"hn 33555373; pre-labelled, checked"
+"I'm a big fan of Bulma, and used it to get started on a project http://pokestop.help
+
+Thanks for the write up, with CSS I never know where to start, this helps to think about it.",reaction,"hn 12173282; pre-labelled, checked"
+TL;DR - Sam Altman gets to build the mass surveillance distillers and autonomous killer robots.,hot_take,"hn 47289990; pre-labelled, checked"
+"For an even more disturbing idea, Titan Park in Beijing has machines in its toilets which scan peoples' faces before dispensing toilet paper.
+
+https://nakedsecurity.sophos.com/2017/03/21/park-uses-facial-recognition-to-wipe-out-toilet-paper-thieves/",analysis,"hn 14319695; pre-labelled, checked"
+"1) Never put your family, friends, or significant other low on your priority list
+
+2) Don’t spend time trying to maintain relationships with people you don’t like, and cut negative people out of your life.
+
+Unfortunately, for me, those two points are in contradiction.",reaction,"hn 9456919; pre-labelled, checked; HARD: personal reflection with no claim about the world (reaction vs hot_take)"
+This is one of the coolest thing I have seen in a long time.. awesome work,reaction,"hn 30648564; pre-labelled, checked"
+"Glad to see the upgraded version, I hope they'll open ordering in Italy soon!",reaction,"hn 31457990; pre-labelled, checked"
+Google is a glorified ad company. That’s it. Nothing else. Nothing new. Nothing special.,hot_take,"hn 33042740; pre-labelled, checked; was the cold draw but not labelled unaided"
+"I thoroughly enjoy uv, having used poetry and requirements.txt prior, but it does come with its faults in a large codebase. Admittedly, I don’t know whether they re due to uv’s infancy, or PEP restrictions.
+
+For example:
+
+ 1. uv sync should update by default (like poetry)
+ 2. uv lock revision and dependency resolver keep changing and it makes it hard to figure out if changes to our uv.lock are real or due to separate versions of uv among developers
+ 3. uv pre-release dependency rules should be able to be disabled with either a sys_marker or specific case like pinning a version
+ 
+
+Some other pain points but I can’t remember them all at the top of my head..",analysis,"hn 45767827; pre-labelled, checked"
+"Interesting, there seem to be lots of opinions about the chosen stack. But as a designer, I have no idea what to make of it.
+
+Recently I rode the Figma API release hype train, and I made a plugin which is quite successful. Almost 10k active installs. It is basically a collection of the most popular viewports and their market share. I also have a server where I store the data. Every other day I run a script which updates the market share and that is about it. To summarize it:
+
+- I have a client (react app written in typescript) which has a very simple ""caching"" mechanism (if you asked the server for new data more then a day ago, ask again) and which shows the data and nothing else.
+- And I have a server (express js) running on Heroku (where I also have the Postgres DB). The server has a basic REST API and very default admin interface. But most of the time the server is not doing anything.
+
+It was something I was able to put together quite fast, but now reading all the comments I'm thinking whether it isn't over-engineered and whether I should go with serverless and possibly reduce the costs.",analysis,"hn 20995385; pre-labelled, checked; was the cold draw but not labelled unaided"
+"A gentle reminder that physical books are still available, and quite inexpensive when purchased used from, e.g., library book stores or thrift stores. It has no DRM, has a Paper White™ interface, and even has a nice smell and feel. You can loan it, give it, or sell it to any human without hassle or legal risk to yourself or them. You can highlight, add notes (""marginalia""), fold the corner of a page for a bookmark. Over time your copy of a book will accumulate incidental stains and marks, developing an identity of it's own. What's even more remarkable is that you own your copy, and it cannot be remotely changed, deleted, or corrupted or your access revoked.",hot_take,"hn 45624124; pre-labelled, checked"
+"This is good for the ecosystem, as google's loss is a lot of other companies gain.
+If Google's employees don't want to help the Chinese people and their government, no problem. There are literally thousands of corporations that will be helping instead of Goog.",hot_take,"hn 18550319; pre-labelled, checked"
+The title of this is a bit misleading. It looks like it just reviewing cables. Plenty of them are positive reviews and he recommends the product.,hot_take,"hn 10513144; pre-labelled, checked; was the cold draw but not labelled unaided"
+"One thing I noted, (which I think is really awesome), is how you outline on the main Github page how to contribute and fix bugs. this kind of thing is really helpful in getting people to participate in open source.",reaction,"hn 8089433; pre-labelled, checked; HARD: praises specific things the repo does, but the point is praise (reaction vs analysis)"
+"Sad news.
+
+I remember fondly watching Myth Busters show. RIP.",reaction,"hn 23831868; pre-labelled, checked"
+"I feel like this is a really good diagnosis of the causes of page bloat and the harms, but the remedy is more nostalgia than anything. The web of the 90s, with amateur blogs and Geocities sites and what have you, the peer to peer content model, it's gone and it's not coming back. The thing about the Eternal September is it's eternal. The Web has transformed into a place where 99% consume and 1% produce. And that's game over. There may well be an adtech bubble bursting, but that's not going to bring the 90s back.",hot_take,"hn 10822927; pre-labelled, checked"
+"the thread is just warming up... I'm half-expecting Kevin Igoe to ""reveal his true form"" and turn into that giant NSA octopus clutching a shit load of ethernet cables that they thought it was a good idea to paint somewhere.",reaction,"hn 6948660; pre-labelled, checked; HARD: a joke with no claim (reaction vs scope)"
+"His post on living systems is absolutely great, just discovered thanks to his thread...
+
+http://hintjens.com/blog:74",reaction,"hn 12638453; pre-labelled, checked"
+"It's a stupid system anyway. Corrupt airline staff can easily bypass all security checks, bring a pistol in a handbag and leave that in the cabin luggage bin for prearranged pickup by an unscrupulous passenger or any sort of shenanigans.
+
+How do they protect against corrupt staff. It's like they're not even thinking. Why don't they just fast track staff checks.",hot_take,"hn 41424033; pre-labelled, checked"
+"Wow, that's crazy. I tried a 6 digit hash and got a 404, then I tried another 6 digit hash and got ""This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository.""
+
+Insane",reaction,"hn 41068906; pre-labelled, checked; HARD: specific detail (6-digit hash) but it only supports amazement (analysis vs reaction)"
+"This is awesome news. I received my Oculus in the first batch and have had a ton of fun playing around with it (save the occasional nausea, but that's really game-specific).
+
+Agree with some comments here that the Rift needs more VR-specific content, but it's still early and with news like this I'm confident that great VR/Oculus-specific content will emerge soon.",reaction,"hn 6174478; pre-labelled, checked"
+"Maybe it's really a good news for Oculus, but if anyone here feel a litter melancholy?
+
+Armadillo Aerospace run out of money and hibernate (2013), id Software had been acquired by ZeniMax Media (2009), id software President Todd Hollenshead has quit after 17 years of service (2013) and there's a long time without really big new Game.
+
+Now John Carmack some kind of working for another company…",reaction,"hn 6178080; pre-labelled, checked; HARD: melancholy, backed by a list of dates and events (reaction vs analysis)"
+Current subscribers get a $30 refund and store credit. Good times!,reaction,"hn 9138760; pre-labelled, checked; HARD: sarcastic 'good times' with a fact in it (reaction vs analysis)"
+"""Chubby Little Loser"" https://www.youtube.com/watch?v=ge7S6-Ta3yg easily my favourite Bowie performance.",reaction,"hn 10882336; pre-labelled, checked"
+"Designing some chartreuse lamps, quickly zip away from their radiuses. I just successfully exited the ""lime light""!",reaction,"hn 43317367; pre-labelled, checked; HARD: a pun with no claim (reaction vs scope)"
+"After the announcement, did they also show the middle finger to “Adobe”? 
+
+Adobe brought ruins onto themselves ( over confidence) by thinking that customers will agree to whatever they did.",hot_take,"hn 41902694; pre-labelled, checked"
+"I am going to go out on a whim and say that I think this is intentional. There are a lot of power games being played these days. I am reminded of this quote from Chomsky,
+
+""There are huge efforts that do go into making people, to borrow Adam Smith’s phrase, “as stupid and ignorant as it is possible for a human being to be.” A lot of the educational system is designed for that, if you think about it, it’s designed for obedience and passivity. From childhood, a lot of it is designed to prevent people from being independent and creative. If you’re independent-minded in school, you’re probably going to get into trouble very early on. That’s not the trait that’s being preferred or cultivated."" [1]
+
+Google is how the masses are ""educated"" these days. There is also the narrative of how students, high school, university, and collage are just googling everything for their tests and exams and not learning everything. (I am one of them)
+
+I am sure SEO spam is part of the problem but there are always multiple narratives going on.
+
+[1] https://chomsky.info/warfare02/",hot_take,"hn 29806544; pre-labelled, checked; HARD: a quote is offered but it doesn't bear on the claim that it was intentional (analysis vs hot_take)"
+"The internet is a weird place. I will never understand why Adria did what she did, from all i read she is an intelligent person yet she chose to do the most childish thing in the world... tattle the kid that said ""penis"" in class. I'm not saying that what the kid is wrong, but don't tattle on him flat-out... just tell him to stop before you go to the teacher and the whole class finds out and the kid gets expelled. But then, the whole class got mad at her. With reason, or not. It do... But the point is that this feels like kindergarden. JUST BE NICE TO EACH OTHERS. DON'T BE PENISES.",hot_take,"hn 5423214; pre-labelled, checked"
+"I don't see this different from what MS used to do with Xbox Live subscriptions in summer... at first the charged $1 for one month, but you have to cancel the subscription before the month ends in order to not being charged again.",analysis,"hn 6457916; pre-labelled, checked"
+Seems like a problem that will fix itself. No one under 18 uses Facebook .,hot_take,"hn 14473685; pre-labelled, checked"
+"I just started playing around with it. It has a very simple learning curve. Within 10 minutes, I was comfortable using the application.
+I would love to see some figures on cross-browser compatibility. It's an excellent tool for making HTML5 animations. This is my only apprehension right now.",analysis,"hn 6474863; pre-labelled, checked; HARD: specific time ('within 10 minutes') but it only supports a mild praise claim (analysis vs reaction)"
+"In Bendigo Australia, and Steve Gibson's DNSBenchmark tells me that of my 50 optimised resolvers (with 1.1.1.1 and 9.9.9.9 added), the two fastest public DNS services I should use are 9.9.9.9 followed by 8.8.8.8. I also add a couple of others for redundancy..",analysis,"hn 16733213; pre-labelled, checked"
+"Straight up grift. If it looks like a duck, quacks like a duck...",hot_take,"hn 26918430; pre-labelled, checked"
+"This is really cute. But I hope noone ever actually uses it :) Too much guesswork and dynamism, violating important design principles IMO. But a nice demo.",hot_take,"hn 6146561; pre-labelled, checked"
+"Last year I traveled to another country (Australia) just to have a Stripe account to use on my startup. Stripe is awesome.
+
+Atlas is something I really need. I can't hardly wait.",reaction,"hn 11171738; pre-labelled, checked; HARD: specific detail (flew to Australia for a Stripe account) but it only supports praise (reaction vs analysis)"
+"I am living in Europe/Vienna. I do not know the US situation too well. However I think they really need an option in between. I think neither option is really interesting to the average user. The buy once option with 5/1Mbps seems too low for the average user, while the 1GBit seems really too expensive.
+
+Wouldn't offers from 30 to 100MBit make much more sense. That's the broadly available offer here for 20 to 50EUR.
+
+Of course we have symmetric fiber offers with 10MBit for 17EUR and 100 for 25EUR too, but that's only available in bigger cities.",analysis,"hn 4305721; pre-labelled, checked; HARD: European broadband prices (20-50 EUR) used as the evidence for what the US needs (analysis vs hot_take)"
+You.com already lists Llama 3 as one of their available LLMs.,analysis,"hn 40098989; pre-labelled, checked; HARD: a bare checkable fact, no argument around it (analysis vs scope)"
+"My fear in this is that MS may require MS passport or whatever it is called ID system to log in to GitHub, with their really unreasonable 16 character max password length restrictions.In general MS websites are poor in usability, and littered with marketing copy, difficult to find useful information.",hot_take,"hn 17227267; pre-labelled, checked"
+"Scumbag Zee. Steals your content, uploads a non-apology to Google Docs.",hot_take,"hn 3976582; pre-labelled, checked"
+">I don’t intend to look for another tech job.
+
+> Or another job at all.
+
+To me, this is a love letter to tech. What other industry pays you near-FU money for uncreative grunge work?",hot_take,"hn 9695168; pre-labelled, checked"
+"Musk on VR https://youtu.be/Ai-gJQ99ci0
+
+I think he has some good points. I don’t think the majority of people want something strapped to their faces. And for those who do, who can play longer than 1 hour without getting motion sickness?
+
+VR is a fad that comes and goes.",hot_take,"hn 34039667; pre-labelled, checked"
+$3 billion in employee RSUs/~50 employees=~$60 million each. There are some very happy WhatsApp engineers today.,analysis,"hn 7270679; pre-labelled, checked"
+Maybe this will be what finally puts an end to the whole art NFT shenanigans. A piece of art isn't so unique if there are infinite slight variations on the market.,hot_take,"hn 30947233; pre-labelled, checked; was the cold draw but not labelled unaided"
+He is not calling for a free and open internet. He is essentially bringing it under government control by painting ISPs as bad guys.,hot_take,"hn 8588232; pre-labelled, checked"
+"Just a FYI. Certain enterprise access points that implement counter measures against rogue APs should be able to thwart this attack. Here is a link to documentation of the feature in one such vendor’s products:
+
+https://docs.ruckuswireless.com/unleashed/200.5/t-EnablingDisablingRogueAPDetection.html
+
+The AP will begin broadcasting deauth frames against the rogue AP as long as it sees it. There are probably some edge cases, but I would expect either the rogue and real APs will fight over the clients indefinitely (thwarting information leaks) or the attack code will trigger an exception and crash because what programmer would expect the client to immediately disconnect?",analysis,"hn 15486701; pre-labelled, checked"
+I'm quickly running out of excuses for still using Chrome...,reaction,"hn 19374457; pre-labelled, checked"
+"The first public academic to my knowledge to begin crystalizing the problem of private prisons and the prison industrial complex was Angela Davis [1] -- I first remember hearing her address this in a 1998 lecture at Northwestern.
+
+Ruth Wilson [2,3] has worked for years analyzing and working to end the expansion and privatization of California's prisons, through both academic and grass roots efforts [4]. Her ""Golden Gulag: Prisons, Surplus, Crisis, and Opposition in Globalizing California"" [5] book is both accessible and rigorous, I highly recommend it. I am a bit shocked that their and foundational work were not mentioned in the piece.
+
+There's a discussion between Davis and Wilson here [6] where they surface the mass incarceration/private prison issue, and detail the pathology of California's prison system.
+
+[1]https://www.amazon.com/gp/product/1583225811/ref=dbs_a_def_rwt_bibl_vppi_i0
+
+[2]https://www.nytimes.com/2019/04/17/magazine/prison-abolition-ruth-wilson-gilmore.html
+
+[3] https://www.youtube.com/watch?v=sTPjC-7EDkc
+
+[4] http://criticalresistance.org/
+
+[5] https://www.amazon.com/Golden-Gulag-Opposition-Globalizing-California/dp/0520242017/ref=pd_sbs_14_6/140-9692660-6198769?_encoding=UTF8&pd_rd_i=0520242017&pd_rd_r=967d5b8c-466b-4fec-9974-b0ffa782f3e5&pd_rd_w=dsvaO&pd_rd_wg=nl4CJ&pf_rd_p=d66372fe-68a6-48a3-90ec-41d7f64212be&pf_rd_r=E6HJNZAF3HPJE5KMQ3MK&psc=1&refRID=E6HJNZAF3HPJE5KMQ3MK
+
+[6] https://www.youtube.com/watch?v=FGPVPrJGXsY",analysis,"hn 20960903; pre-labelled, checked"
+"Any time I see a new article on that domain, I know I'm going to be distracted from work for an hour or so while I have a great time. Bartosz, your work is amazing.",reaction,"hn 42450336; pre-labelled, checked"
+"I have been very happy with my M1 systems, and I’m looking forward to getting function keys back. However, the SD card capability is coming back at a time when pros are moving to CFExpress cards.
+
+Unfortunately, there are some form factor differences between these new, much faster, cards used in higher end Sony, Cannon, and Nikon cameras. It’s a bit confusing since there are three types of CFExpress cards—I wonder if the new MacBook Pros can read any of them?",analysis,"hn 28929249; pre-labelled, checked; HARD: CFExpress/camera-maker detail, ends in a question (analysis vs scope)"
+"I understand people's outrage at this invasion of privacy - but honestly why do people think that anything they have ever done online hasn't already been tracked and recorded (not being paranoid or anything - just being realistic).
+
+There is a lot of value in figuring out who someone is, what they like and don't like and what they are likely to buy (ad networks/trackers etc.).
+
+Hence you MUST assume that everything you have done, and ever will do, is, for all intents and purposes, PUBLIC FOREVERMORE.
+
+Not ""whisper public"" but shared across YouTube public with 100 MILLION PEOPLE.
+
+Once you assume that situation you attempt to mitigate possible pitfalls and these things don't bother you so much (they still will - but the sting isn't nearly as strong).
+
+And no - the web isn't going in the opposite direction - privacy is dead - long live privacy!
+
+You can try and shame or regulate it away - but seeing the web as it is today and where it's going - there is no turning back.",hot_take,"hn 4378550; pre-labelled, checked"
+"When it is bitter cold, the touch part of a touchscreen ceases to function and you will wish you had a flip phone with real buttons.",hot_take,"hn 32504568; pre-labelled, checked"
+It just occurred to me while reading this that the entire job of counsellors is to usher non-violent communication between people. Fascinating.,reaction,"hn 19496860; pre-labelled, checked; HARD: 'fascinating' attached to a claim about what counsellors do (reaction vs hot_take)"
+"Your story brought tears in my eyes. Thanks for sharing with us all. Surely someone or the other will benefit from your findings. Also, salute to your patience, and the hope that kept you on. I have never been outside India, but if I ever came to US, I will surely meet you.",reaction,"hn 4047781; pre-labelled, checked"
+"If I was the Atlassian CEO reading this thread, I'd be really worried. There are a lot of comments from developers with zero faith in Atlassian's ability to create (or even preserve) a great product.",hot_take,"hn 13363673; pre-labelled, checked"
+"It's Tesla started this design, iphonized car industry.
+
+Screen navigation should be banned in the car no matter what type of screen it is.
+
+When driving or piloting, what's the last time you heard the display has several levels of menu/screen to move around. Just display everything, let the eyes choose where to look.",hot_take,"hn 20219281; pre-labelled, checked"
+Genuinely confused how this guy ever thought capitalism was to blame for the GTA's loading issue. As if any other economic system wouldn't have the same result.,hot_take,"hn 26343341; pre-labelled, checked; was the cold draw but not labelled unaided"
+"> Others expressed frustration that three senior executives sold about $1.8 million in stock in the days following the discovery of the hack. A spokeswoman for Equifax said the men “had no knowledge that an intrusion had occurred at the time.”
+
+Wait, what? Isn't this a blatant example of insider trading? Moreover connected to a problem they are responsible for?. Do they seem to be really that stupid or is there a chance that they could get away with that in the end?",hot_take,"hn 15206106; pre-labelled, checked; HARD: outrage built from rhetorical questions about insider trading (reaction vs hot_take)"
+"Now there's a Google response, and a response to that response. I love it when journalists bring the receipt. Is it even deniable that Google search is terrible now? Remember a time when there was not anything close to Google search, and Bing! was a joke? I never thought I would switch, but my daily driver now is Bing+CoPilot. I've run the same search on both Google and Bing and the results are mostly better on Bing, with the majority of crud still in the result of both, but the better, more relevant results, are on Bing.",hot_take,"hn 40164480; pre-labelled, checked; HARD: says she ran the same search on both, but gives no queries or results (analysis vs hot_take)"
+"Race to the bottom!
+
+Amazon checklist:
+
+1) Import cheap Chinese goods,
+
+2) avoid sales tax,
+
+3) destroy the environment (china),
+
+4) destroy brick and mortar stores,
+
+5) destroy small/medium business.
+
+=== PROFIT!",hot_take,"hn 14573760; pre-labelled, checked"
+"You know, no one asked you tech people from getting involved in law making. Nowadays, a law maker can't seem to do anything at all without some techie crying foul. Their argument always is some nonsensical technobabble, which the courts can't really understand anyway, often giving in to their demands just to get them to go away.
+
+And it's such a shame, too, since those laws were bought and paid for by lobbyists, and what does it say about the rest of the country if one can't expect to get what one pays for when lobbying at the highest level of government?",hot_take,"hn 12141890; pre-labelled, checked"
+"All I can say is that after reading this thread, I'm glad that I'm not a Node developer.",reaction,"hn 10191943; pre-labelled, checked"
+"I'm gonna revive the TwitchTV thread with a true story. I've killed the cable and gone with higher-speed broadband, ordered but not yet installed. I was tired here on Saturday night and went looking for some NBA, and not reading the links closely wound up watching NBA 2k12 on twitch for a few minutes until I snapped it wasn't actually live NBA. That tells me the animation is close to passing for photorealistic, and even that might not be important if the players (the humans [or AIs] playing, I mean) are so good that it is as interesting to watch as it when watching live giant humans really play basketball.
+
+Second true story was chaperoning a 15-year-old overnight birthday party right after Skyrim came out. Watching seemed to be quite acceptable entertainment, although there were occasional switches to the Fallout channel. This despite enough controllers for actually multi-play.
+
+As has been noted, this is still somewhat Hollywood-y in the movie-sized investment in those games, but the revenue is definitely not going to traditional motion picture studios.",analysis,"hn 3496214; pre-labelled, checked"
+"That popup that takes up a third of the page is ridiculous (I actually think it's a bit more on my screen).
+
+Whenever I get a link to facebook for something I sigh, because that sort of stupid, hostil UX won't get them anywhere.
+
+If people wanted an account, they'd have one. It's not like visiting the link is going to be my first time ever hearing of facebook, and that's probably true for 99% of the people visiting one.",hot_take,"hn 14467026; pre-labelled, checked; was the cold draw but not labelled unaided"
+Small enough is nice but I desperately need an iPhone like battery Android. Battery issue on Android is ridiculous.,hot_take,"hn 31431022; pre-labelled, checked"
+"Everything google does is to generate data points. Although the rest of the world raises prices to cover costs, increase profits, etc., Google plays with APIs, pricing, availability as a way to generate data to model the behavior of its customers. Simply raising prices to make more money is besides the point. Although the price hike may have been instigated by mundane factors, the way they do it is to understand who is using their product. They could have sneakily inched their way up. Like the frog in the water on the stove, it wont know its cooked until it's too late. Also Google could have (OMG) added ads to map tiles. Or they could have a price scale that changes as you engage more of their services (move your website to GCloud, get more map views for free). By making this most unlikely move ( a move that would alienate customers in most other markets) Google is implementing a limit theorem. It is trying to segregate its customers' behavior into different groups- groups that the customers themselves do not know exist or which they belong in. This kind of data is what they will use to inform their future investment.",hot_take,"hn 17574668; pre-labelled, checked"
+">> ‘The ability to observe without evaluating is the highest form of intelligence.’ — Jiddu Krishnamurti, Indian Philosopher
+
+First of all, he was a mystic than being a philosopher.
+The quality of observing is a by-product, a consequence.
+If you directly try to achieve this by using your mind based on some moral principles or disciplines mentioned through this article you are bound to get frustrated. It is like one thought fighting with other thought but in the end, it leads to the creation of a chain of many complex thoughts entangled. But because it appeals more many people fall prey.
+
+I see many such articles focus more on the mind and how to change thoughts. This article is nothing but an offshoot of a limited part of psychology. A real inner transformation happens when you experientially go beyond thoughts. Psychology is just a temporary cure. Vipassana can help you in a true experiential manner.
+
+Jobs such as software engineering and others which requires constant use of thinking and sitting at one place throughout the day makes the mind stronger than other faculties of a human being. it needs to be balanced with exercise (to remove physical and to certain extent mental blocks ) and proper meditation guidance.",hot_take,"hn 19498557; pre-labelled, checked"
+"It's amazing how many new features and even new complete products Keybase has been able to build on top of their core in such a short span of time. Even more so considering that a large part of that core is ""just"" a much better UX for a technology (GPG) that has existed for decades.",reaction,"hn 15406608; pre-labelled, checked"
+"I still don't see anyone offering a viable solution..
+
+There are a lot of variables that come into play for a generic copyright or IP law that encompasses all creative works. The first of which should probably be scope.
+
+Physical and non-physical creations; a painting or a jpg; a photo of a painting in jpg format; a photo of a photo of a painting in jpg format.
+
+The digital work - the internet - has changed the world forever and we're not going back. Some form of ""SOPA"" or ""PIPA"" is inevitable.
+
+The question is simple: what are you going to do about it?",hot_take,"hn 3487735; pre-labelled, checked; was the cold draw but not labelled unaided"
+"> Early in your career, you can learn 10x more in a supportive team in 1 year, than coding on your own (or with minimal feedback) for 5 years.
+
+Spot on!!!",reaction,"hn 20129949; pre-labelled, checked"
+Wow! That is one scary vulnerability. Glad we have smart people like this to find such problems before the bad guys do. Well done!,reaction,"hn 14741096; pre-labelled, checked"
+i did not like truecrypt very much just because we could not choose the encryption encapsulation in any order we could choose (like something to remember like password) like in ANY order blowfish-blowfish-sherpent-aes ...... etc in any length or combination. there were just hardcoded defaults to choose,analysis,"hn 11398051; pre-labelled, checked; HARD: specific product-feature complaint, the detail is the claim itself (analysis vs hot_take)"
+When critical infra becomes centralized then the reliability expectations shift from good enough to essential. Its normal that outages stop being simple issues and become production blockers,hot_take,"hn 47958800; pre-labelled, checked"
+"I pass the game manually. It was quite existing and made me super tired at once.
+Definitely I felt over simulated for the rest of the day.",reaction,"hn 42634882; pre-labelled, checked"
+"> “Chelsea Manning is somebody who went through the military criminal justice process,
+
+it was torture. you can give it names but it was torture. your criminal justice process involves torture.
+
+> was exposed to due process
+
+naked torture
+
+> was found guilty, was sentenced for her crimes, and she acknowledged wrongdoing,” he said. “Mr. Snowden fled into the arms of an adversary and has sought refuge in a country that most recently made a concerted effort to undermine confidence in our democracy.”
+
+I am so disgusted right now. Why do they even pretend.",hot_take,"hn 13434829; pre-labelled, checked; was the cold draw but not labelled unaided; HARD: disgust at the officials quoted, but it asserts that the process was torture (reaction vs hot_take)"
+"It's a compelling story, BUT, are libraries really the best way to solve this social problem? Most tax payers don't realize just how expensive their library system is. In my county, we spend $90 million per year for our libraries - about 0.5% of property taxes. As a home owner, neary 15% of the cost of your home, is being funneled to the library system.
+
+I am very in favor of community public investment, but I am skeptical that our libraries are an efficient allocation of the very large claim they already have on our public taxes.
+
+Note in this story how the grandfather was so poorly served by the system. It's not designed to serve those who need the system most. In the end he only gets reluctant help from someone overqualified (overpaid) to give him the kind of assistance he needs.
+
+Unlike other suggestions in this thread, I do not agree that the answer is to prop up the failing library system by pretending to use its services to make their numbers look better. We should be demanding that our libraries evolve to remove wasteful and expensive services (that many of its users can already afford to pay for directly), and focus on the needs of those who cannot pay.
+
+Our average library staff salary and benefits cost $25/hr - couldn't we double the assistance to the underprivileged by paying trained ""Web Assistants"" $10/hr to help them instead?",analysis,"hn 3609694; pre-labelled, checked"
+Signal is almost like anti-virus software against Cellebrite.,hot_take,"hn 26902210; pre-labelled, checked; was the cold draw but not labelled unaided"
+"Congratulations on this great endeavour! I've frequently mulled setting up website like patreon to help support and accelerate crucial research, which is seeing less and less progress these days. I'm glad YCombinator took note of this problem too!",reaction,"hn 10351522; pre-labelled, checked"
+"> The most important reason is that, when used correctly, it is already significantly safer than a person driving by themselves and it would therefore be morally reprehensible to delay release
+
+Doesn't Tesla charge a large fee to have autopilot enabled on your car? Isn't that equally morally reprehensible?",hot_take,"hn 12139133; pre-labelled, checked; HARD: rhetorical question that is really a claim (hot_take vs question)"
+"I have flash set to ""click to play"" so flash videos only load when I click on them. I dislike the HTML5 because it means videos always autoplay. I hate autoplaying video.",hot_take,"hn 8959014; pre-labelled, checked; HARD: personal dislike, but also asserts HTML5 forces autoplay (reaction vs hot_take)"
+"The data here is clear. 80% of clicks are from non JS clients. There's no getting around this. I run an ad network, a real-time analytics product and a WordPress security product that provides real-time traffic and we use JS vs non JS to distinguish between human and non-human for our customers and it is 95+% reliable.
+
+As an ad network provider it's your responsibility to filter spam clients based on heuristics like click frequency from a geo location, JS support in clients, behavior of ISP IP blocks, etc.
+
+It may be that this customer was specifically and exclusively targeted, but even so FB should have mechanisms in place to deal with and block this. This is not a good sign, but then as I've mentioned before I don't think ads is a viable model for FB, so perhaps their energy is being directed elsewhere.",analysis,"hn 4315442; pre-labelled, checked"
+This is a nice article. I am surprised to see a 'management' article to receive so many votes on HN.,reaction,"hn 17244094; pre-labelled, checked; was the cold draw but not labelled unaided"
+"I was very excited to try the new GPT-6 Luna on our internal evals for a cybersecurity application. The 50% cost savings over 5.6-Luna sounded like an easy win.
+
+Unfortunately in our benchmarks 6-Luna uses way more tokens to produce the same result at a given thinking effort, and takes longer to do so. The additional tokens wipe out the cost savings for us. Has anyone else seen this?",analysis,"hn 49856057; pre-labelled, checked"
+"Traitor or patriot is not defined by the current crowd in office, or by whether you support the current questionable policies.
+
+A patriot is someone who consistently defends the constitution, which every one of those clowns took an oath to do.
+
+L'État n'est pas eux.",hot_take,"hn 5864639; pre-labelled, checked; was the cold draw but not labelled unaided"
+Comodo's behavior is shameful. How can we punish them? Is there a way to move away from using their services?,hot_take,"hn 11963059; pre-labelled, checked; HARD: outrage at a company ('shameful'), which is a claim about another party, not just a feeling (reaction vs hot_take)"
+"Why? After trying Opera many times in the past, now that it's using Chromium and supports the plugins, I am now a die-hard fan.",reaction,"hn 20063490; pre-labelled, checked"
+"It would be great if the government's budget included a computer and basic internet access in its assistance programs. I can't imagine this would be too expensive. Also people would benefit from the increasingly free education provided by Stanford, Udacity, etc.",hot_take,"hn 3610253; pre-labelled, checked"
+"My partner interviewed with Stripe (admittedly not for an engineering role but for an adjacent role) and had a very positive experience. They start in a few weeks. It's fun to idly observe companies interview processes and Stripe's seemed super upstanding and robust. Very responsive all round with a solid offer and flexibility on start time.
+
+FWIW they interviewed with 3 other companies at same time — all ~$10B-ish companies — and 2 of them were very negative experiences (slow to respond recruiters, written offer not aligning with initial salary expectations, ...)",analysis,"hn 29407933; pre-labelled, checked"

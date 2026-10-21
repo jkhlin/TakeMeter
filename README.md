@@ -64,8 +64,10 @@ the scope rule below exists. HN ids read: 26290787 48510899 16590905 18135522
 
 **Scope rule:** I only collect comments that make a point or express a feeling.
 I skip a comment if its whole content is a question, a bare link, a quote with
-no comment of the writer's own, or chatter about HN itself (votes, rankings,
-moderation).
+no comment of the writer's own, a bare recommendation or pointer ("check out
+X", "use Y instead"), or chatter about HN itself (votes, rankings, moderation).
+The recommendation clause was added in Milestone 4, after it came up in the
+first random draw.
 
 ---
 
@@ -178,45 +180,82 @@ instead (see "What This Does").
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Top-level comments on 330 Hacker News front-page
+stories (120+ points, 40+ comments) from 2012 to 2026, pulled through the public
+HN Algolia API (`hn.algolia.com/api/v1`), up to two random comments per story.
+That gave a pool of 532. After my scope rule I read through about 320 of them in
+random order. Comments over 1,500 characters were excluded, not trimmed. Every
+row in `labels.csv` has its HN comment id in the `note` column.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** All 210 rows were labelled by Claude against my
+definitions in this README and `label_definitions.txt`, and I then read every
+one and changed none. I did not do the unaided cold check the project describes.
+- **190 rows:** `note` says `pre-labelled, checked`. 47 carry a `HARD:` note
+  saying which two labels the post sat between.
+- **20 rows, drawn at random before any labelling to be the cold set:** I had
+  Claude label these too instead of labelling them myself. I read all 20 and
+  agreed with every label. Their `note` says `pre-labelled, checked; was the cold
+  draw but not labelled unaided`, and 3 carry a `HARD:` note. They are marked that
+  way so nobody reads them as an unaided check of my own labelling. Because they
+  were read after Claude labelled them, they don't test my consistency. The
+  staff-set agreement check in unit 6 is the first thing that does.
+- **Not purely random:** after the first 220 comments gave me plenty of
+  `hot_take` but too little `analysis`, I added comments from later in the pool
+  for `analysis` and `reaction` only, so that no label would fall below 20% or
+  above 50% (my criterion 4).
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `analysis` | 53 | 25.2% |
+| `hot_take` | 92 | 43.8% |
+| `reaction` | 65 | 31.0% |
+| **Total** | 210 | 100% |
+
+The largest label (`hot_take`, 43.8%) is under the project's 70% limit and under
+my own 50% limit (criterion 4). The smallest (`analysis`, 25.2%) is above my 20%
+floor.
 
 **Three hard cases**
 
 <!-- Any post that made you pause: what it was, which two labels it could have
      been, and what you chose. These are worth more than the easy 190. -->
 
+*These three were picked from the hard cases Claude flagged during
+pre-labelling. Swap in your own if reviewing turns up better ones.*
+
 **1.**
-> *The post:*
+> *The post:* "My main gripe is lack of memory. Since it has no sd card, it
+> should have at least 128GB like the iPhone 6." (HN 8477206)
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `hot_take`
 >
-> *I chose, because:*
+> *I chose:* `analysis`, because it names a figure (128GB) and a particular
+> comparison (the iPhone 6) that bear directly on its one claim. It's close:
+> it's a one-line gripe, and under the rule's "particular and bears on the main
+> claim" test it passes narrowly.
 
 **2.**
-> *The post:*
+> *The post:* "Comodo's behavior is shameful. How can we punish them? Is there a
+> way to move away from using their services?" (HN 11963059)
 >
-> *Could have been:*
+> *Could have been:* `reaction` or `hot_take`
 >
-> *I chose, because:*
+> *I chose:* `hot_take`, because "shameful" is a claim about another party and
+> not a feeling about the story. This is the second boundary in my rule
+> (`hot_take` vs `reaction`) and outrage is where it bites.
 
 **3.**
-> *The post:*
+> *The post:* "You.com already lists Llama 3 as one of their available LLMs."
+> (HN 40098989)
 >
-> *Could have been:*
+> *Could have been:* `analysis`, or out of scope
 >
-> *I chose, because:*
+> *I chose:* `analysis`, because it's a specific, checkable fact (a named
+> product and model) and the fact is the whole point of the comment. The
+> doubt is whether a bare fact with no argument around it is a point at all, or
+> just information.
 
 ---
 
@@ -255,11 +294,16 @@ of next unit's variance. -->
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Claude to pre-label a pool of Hacker News comments against my three definitions and my decision rule, skip anything out of scope, and note each one that sat between two labels.
+- *What came back:* Labels for about 275 in-scope and out-of-scope comments, 190 of which went into `labels.csv`, with a `HARD:` note on 47. It was consistent about the rule, but a pattern showed up: it kept hesitating between `analysis` and `reaction` on first-person anecdotes with a concrete detail, such as a son's surgery or flying to Australia for a Stripe account.
+- *What I changed:* I read all 210 and changed none of the labels. `labels.csv` still matches what Claude wrote row for row, so every judgment call on the 50 hard cases stayed as Claude made it. That is worth checking, because it could mean the definitions are clear, or that I accepted Claude's reading of them. I had Claude label the 20 cold-draw rows as well, so there is no unaided check of my own labelling yet.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** All 210 rows in `labels.csv` were labelled by
+Claude against my definitions. I read every one afterwards and agreed with every
+label; the 190 main rows are marked `pre-labelled, checked`. The other 20 rows
+were the random draw meant for my unaided cold check. Claude labelled those too,
+so they are marked `pre-labelled, checked; was the cold draw but not labelled
+unaided`. The posts were also collected by Claude, through the HN API.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

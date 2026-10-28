@@ -390,11 +390,16 @@ class. Seed 42's 0.625 was a friendly draw, not the typical result.
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 on every seed | 0.625 | 0.438 | 0.438 | MISSED |
+| 2. Per-label F1 | ≥ 0.60 each label, `analysis` (my smallest) ≥ 0.50 | `analysis` 0.000 / `hot_take` 0.700 / `reaction` 0.750 | `analysis` 0.000 / `hot_take` 0.609 / `reaction` 0.000 | `analysis` 0.000 / `hot_take` 0.609 / `reaction` 0.000 | MISSED |
+| 3. Consistency with staff | ≥ 24 of 30 | 30/30* | 30/30* | 30/30* | UNTESTED (see below) |
+| 4. Balance | no label > 50% or < 20% of `labels.csv` | 43.8% / 31.0% / 25.2% | same file | same file | MET |
+| 5. Confidence | most-confident third ≥ 20 points above least-confident third | +0.40 (0.9 vs 0.5) | +0.80 (0.8 vs 0.0) | +0.50 (0.7 vs 0.2) | MET |
+
+\* Claude's labels, not mine, so this number isn't a valid reading of my own
+consistency. Criterion 4's shares are `hot_take` / `reaction` / `analysis`
+(92, 65, 53 of 210 rows). The seed columns don't apply to criteria 3 and 4
+because neither depends on the split.
 
 ### Confusion matrix
 
@@ -431,11 +436,11 @@ confusing a specific pair.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | ≥ 0.70 on each seed | MISSED | Got 0.625, 0.438, 0.438. Even the best seed is 7.5 points short, and two of three are 26 points short. There is no generous reading: the target had to hold on all three. |
+| 2 | Per-label F1 | ≥ 0.60 each label, `analysis` ≥ 0.50 | MISSED | `analysis` F1 is 0.000 on all three seeds, and `reaction` is 0.000 on seeds 7 and 2024. Only `hot_take` clears 0.60, and it does so on every seed. |
+| 3 | Consistency with staff | ≥ 24 of 30 | UNTESTED | Claude labelled the 30 posts and got 30/30. That would clear the line, but the criterion is about me applying the rule, so the number says nothing about my labels. I won't count it as MET. |
+| 4 | Balance | none > 50%, none < 20% | MET | `hot_take` 92 (43.8%), `reaction` 65 (31.0%), `analysis` 53 (25.2%) of 210 rows. The file has 210 rows, not the 200 the criterion's wording assumed, and the shares hold either way. |
+| 5 | Confidence | most-confident third ≥ 20 points above least | MET | Gaps are +0.40, +0.80 and +0.50, so it holds on every seed. See the caveat below. |
 
 **Diagnoses**
 
@@ -448,7 +453,56 @@ confusing a specific pair.
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
 
+**Criteria 1 and 2 (accuracy, per-label F1): the model barely trained, and
+`analysis` is where it shows worst.**
 
+- *The model collapsed to the majority label.* On seeds 7 and 2024 it called all
+  32 test posts `hot_take` (confusion rows for `analysis` and `reaction` are
+  entirely in the `hot_take` column). That is why accuracy is exactly 0.438 =
+  14/32, the `hot_take` share of the test split, and why `hot_take` recall is
+  1.000 on every seed.
+- *Not enough training signal.* Training used 146 posts at batch size 16 for 3
+  epochs, about 30 optimizer steps. Loss on every seed ended at 0.94 to 0.97,
+  close to the 1.10 you get from guessing among three labels. Validation
+  accuracy on seeds 7 and 2024 never moved off 0.4375 across all three epochs.
+  Cause: a task the model can't reach from this much data at these settings,
+  and that is what a fix attempt has to change (more epochs or a higher
+  learning rate), not the targets.
+- *`analysis` is hit hardest because it is my thinnest label.* It has 37 training
+  posts against 64 for `hot_take`, so a model leaning on the class prior never
+  predicts it. This is the "too few examples for a label" cause. The test
+  split's 8 `analysis` posts are all called `hot_take` on all three seeds.
+- *The label itself is learnable, so this isn't proof of bad labels.* The
+  zero-shot baseline with my definitions got `analysis` F1 0.410 on the same
+  posts, so a model with no training found some of them. A fine-tuned model at
+  0.000 is doing worse than a model that never saw my data.
+- *`reaction` swings from F1 0.750 (seed 42) to 0.000 (seeds 7 and 2024).* One
+  split got 6 of 10 right and the others got none. That is instability in a model
+  sitting near the class prior, not a stable property of the label.
+
+**What the agreement report can and can't tell me here.** It can't separate a
+labelling problem from a model problem for me. The 30/30 came from Claude's
+labels, so it shows the staff rules can be applied consistently by someone who
+read them, but says nothing about how I applied my own taxonomy to 210 posts.
+The only labelling evidence I have is indirect: the baseline's `analysis` F1 of
+0.410 suggests the label is detectable from its definition, which makes
+inconsistent labels a less likely cause than too little training, but it doesn't
+rule them out. To test it properly I would need to label the 30 staff posts
+myself, or relabel a sample of my own posts blind and see how often I disagree
+with my own labels.
+
+**Criterion 3 is untested, not met.** The number that would pass is the wrong
+person's.
+
+**Criterion 5 is met but I wouldn't lean on it.** The gaps are real (the most
+confident third was right 0.7 to 0.9 of the time, the least confident 0.0 to
+0.5), but each third is only 10 posts, so a single post is 10 points, and mean
+confidence when right (0.44 to 0.47) is only slightly above when wrong (0.41 to
+0.42), all near the 0.33 of a three-way guess. It holds on this evidence, and
+it may not on a model that actually trains.
+
+**No criterion revised.** None of the misses came from a criterion that couldn't
+be measured, so every original target stays as written.
 
 ---
 

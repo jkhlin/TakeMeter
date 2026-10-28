@@ -365,6 +365,29 @@ I expect the trained model to beat the baseline most on `reaction` and `hot_take
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
+**Three seeds, same 210 posts, same settings** (`results_three_seeds_before.json`).
+All three ran on `cpu` (`CPU`), torch 2.14.1+cpu, `max_length` 128, as recorded
+in that file. Each seed's test split is 32 posts (8 `analysis`, 14 `hot_take`,
+10 `reaction`). As in the training run above, Claude ran section 6 from a script
+using the notebook's own cells, not by clicking through the notebook.
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.625 | 0.438 | 0.438 | 0.188 |
+| Macro F1 | 0.483 | 0.203 | 0.203 | 0.280 |
+| F1 — `analysis` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `hot_take` | 0.700 | 0.609 | 0.609 | 0.091 |
+| F1 — `reaction` | 0.750 | 0.000 | 0.000 | 0.750 |
+
+Accuracy moved 18.8 points across seeds, well past the notebook's 10-point line,
+so by its own rule this is too unstable to trust. The cause is visible in the
+numbers: on seeds 7 and 2024 the model called all 32 test posts `hot_take`, and
+0.438 is exactly 14/32, the `hot_take` share of the test split. Only seed 42
+got `reaction` posts right (6 of 10). Training loss on every seed ended around
+0.94 to 0.97, close to chance for three labels (ln 3 ≈ 1.10), so with 146
+training posts and 3 epochs the model is barely past guessing the majority
+class. Seed 42's 0.625 was a friendly draw, not the typical result.
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
 | 1.  |  |  |  |  |  |
@@ -378,16 +401,24 @@ I expect the trained model to beat the baseline most on `reaction` and `hot_take
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+Seed 42 (the notebook's section 7 prints this seed). Rows are true labels,
+columns are the model's guesses.
+
+| true \ predicted | analysis | hot_take | reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **analysis** | 0 | 8 | 0 |
+| **hot_take** | 0 | 14 | 0 |
+| **reaction** | 0 | 4 | 6 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+All 8 real `analysis` posts were called `hot_take` and none went the other way,
+so the model never learned the `analysis` / `hot_take` boundary and treats every
+`analysis` post as a `hot_take`; seeds 7 and 2024 show the same thing on every
+post, so this is a model that defaults to the majority label rather than one
+confusing a specific pair.
 
 
 

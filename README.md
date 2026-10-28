@@ -580,21 +580,88 @@ labels.
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** One training setting: `EPOCHS` from 3 to 8 in section 2 of
+the notebook. Nothing else: same 210 labels, same splits and seeds (42, 7,
+2024), learning rate 2e-5, batch size 16, 128 tokens. No rows were relabelled
+or added. I also set `RUN_LABEL = "after"` in section 6, so the numbers are in
+`results_three_seeds_after.json` and `results_three_seeds_before.json` is
+untouched. I picked 8 before running it and did not try other values, so it
+wasn't tuned against the test split. As before, Claude ran the notebook's cells
+from a script, not by clicking through the notebook.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The Verdicts section's diagnosis of criteria
+1 and 2: the model barely trained. At 3 epochs it did about 30 optimizer steps,
+loss ended near the 1.10 you get from guessing among three labels, and on seeds
+7 and 2024 it predicted `hot_take` for every post. More epochs gives it more
+steps to move off the class prior. I did not pick relabelling because the
+agreement check couldn't point at a boundary I'd applied two ways (those
+labels were Claude's), and I did not add examples because the collapse showed
+up on every label, not only the thinnest.
 
 ### Run Log — After
 
+Same five criteria and targets as the "before" log above, 8 epochs, three seeds
+(`results_three_seeds_after.json`, same CPU and torch 2.14.1+cpu).
+
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | ≥ 0.70 on every seed | 0.688 | 0.656 | 0.656 | MISSED |
+| 2. Per-label F1 | ≥ 0.60 each label, `analysis` ≥ 0.50 | `analysis` 0.462 / `hot_take` 0.733 / `reaction` 0.762 | `analysis` 0.308 / `hot_take` 0.848 / `reaction` 0.556 | `analysis` 0.600 / `hot_take` 0.692 / `reaction` 0.667 | MISSED |
+| 3. Consistency with staff | ≥ 24 of 30 | 30/30* | 30/30* | 30/30* | UNTESTED (unchanged) |
+| 4. Balance | no label > 50% or < 20% | 43.8% / 31.0% / 25.2% | same file | same file | MET |
+| 5. Confidence | most-confident third ≥ 20 points above least | +0.50 (0.9 vs 0.4) | +0.60 (0.9 vs 0.3) | +0.60 (0.9 vs 0.3) | MET |
 
-**Did it help, and how do I know:**
+\* Claude's labels, not mine; see the "before" log. Criteria 3 and 4 don't
+depend on the training change.
+
+**Before and after, side by side**
+
+| Measure | Before (3 epochs) 42 / 7 / 2024 | After (8 epochs) 42 / 7 / 2024 |
+|---|---|---|
+| Overall accuracy | 0.625 / 0.438 / 0.438 | 0.688 / 0.656 / 0.656 |
+| Accuracy spread | 0.188 | 0.031 |
+| Macro F1 | 0.483 / 0.203 / 0.203 | 0.652 / 0.571 / 0.653 |
+| F1 — `analysis` | 0.000 / 0.000 / 0.000 | 0.462 / 0.308 / 0.600 |
+| F1 — `hot_take` | 0.700 / 0.609 / 0.609 | 0.733 / 0.848 / 0.692 |
+| F1 — `reaction` | 0.750 / 0.000 / 0.000 | 0.762 / 0.556 / 0.667 |
+
+Confusion matrix after, seed 42 (rows are true labels):
+
+| true \ predicted | analysis | hot_take | reaction |
+|---|---|---|---|
+| **analysis** | 3 | 4 | 1 |
+| **hot_take** | 1 | 11 | 2 |
+| **reaction** | 1 | 1 | 8 |
+
+**Did it help, and how do I know:** Yes, a lot, but not enough to meet either
+missed criterion.
+
+- *The collapse is gone.* Before, seeds 7 and 2024 called every test post
+  `hot_take`. After, all three seeds predict all three labels, and accuracy is
+  0.688, 0.656 and 0.656, up 6 to 22 points per seed. Macro F1 went from 0.203
+  on two seeds to 0.571 and above. Training loss fell to 0.74 to 0.81 and
+  validation accuracy climbed to 0.75 by epoch 7 or 8 on every seed, where it
+  had sat at 0.4375 before.
+- *The instability was mostly the same problem.* Accuracy spread dropped from
+  0.188 to 0.031, which the notebook calls stable enough to trust.
+- *`analysis` came back from 0.000 to 0.308–0.600*, and `reaction` from 0.000
+  to 0.556–0.762 on the seeds that had collapsed.
+- *Criterion 1 is still MISSED.* The target is 0.70 on every seed. With 32 test
+  posts, 0.70 needs 23 correct. The best seed got 22 and the others 21, so it's
+  a miss by one to two posts, and I'm calling it a miss.
+- *Criterion 2 is still MISSED.* Only seed 2024 clears every label (`analysis`
+  0.600 against its 0.50 line, `hot_take` 0.692, `reaction` 0.667). Seed 42
+  misses on `analysis` (0.462) and seed 7 on `analysis` (0.308) and `reaction`
+  (0.556). The target had to hold on all three.
+- *The `analysis` to `hot_take` direction is still there.* On seed 42, 4 real
+  `analysis` posts were called `hot_take` against 1 the other way. Training
+  length fixed the collapse but not that boundary. It's still the thinnest
+  label (37 training posts), so more `analysis` examples, or checking my own
+  labels on that pair, are the next things to try.
+- *Caveats.* One post is 3.1 points on the test split and 10 points in a
+  confidence third, so differences between seeds of a few points are noise. Three
+  seeds on one 210-post file is a small sample. The earlier "Baseline vs. Trained"
+  table above compares the baseline against the 3-epoch model, not this one.
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->

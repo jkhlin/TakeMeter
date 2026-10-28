@@ -460,7 +460,15 @@ confusing a specific pair.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 30 / 30 = 100%
+
+**Who labelled these:** Claude, not me. I asked it to do Milestone 3, so it read
+`data/staff_taxonomy.md`, labelled the 30 posts in `data/staff_posts.csv` under
+those rules (10 `analysis`, 10 `hot_take`, 10 `reaction`), and saved
+`my_staff_labels.csv` before `agreement.py` read the staff labels. This rate
+measures how well Claude applied the staff rules. It says nothing about how
+consistently I applied my own taxonomy to my 210 posts, which is what this
+check is meant to tell me.
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -482,25 +490,35 @@ confusing a specific pair.
      written rule two different ways on 30 posts, that is direct evidence about
      what you did across your own 200. -->
 
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
-
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+There were none, so there is nothing to adjudicate and no (a)/(b)/(c) piles to
+fill. `agreement_results.json` records 30 agreed, 0 disagreed.
 
 **What the pattern in my disagreements tells me:**
+
+With no disagreements there is no pattern to read, and 100% is not by itself
+evidence that the staff rules are tight. The taxonomy says staff picked several
+posts for being ambiguous and that a rate in the 70s is normal, so a perfect
+score more likely means the set was easier than advertised, or that labels from
+a model that has read the decision rules line up with staff more than a person
+working from memory would. The closest calls, where the rules had to do the
+work, were these, and staff agreed on every one:
+
+- Posts 14 (`hot_take`) and 17 (`hot_take`): each has a number or date (3% since
+  the shoe rules changed; "peaked in about 2015"), but the fact decorates a
+  conclusion already stated ("so obviously...", "everything since has been
+  marketing"). Rule 1, and the 3% example in the taxonomy is nearly post 14.
+- Post 18 (`hot_take`): "slower than 8 minute miles" is a threshold in the claim,
+  not a fact that carries an argument.
+- Posts 5 and 10 (`analysis`): each is one runner's own numbers, but the numbers
+  are the reason for the conclusion (rule 1), so they count even though the
+  sample is tiny.
+- Posts 27 and 29 (`reaction`): both contain a concrete detail (20 degrees of
+  lean, the wrong-size shoes), but the post is about what just happened to the
+  writer and the detail isn't argued from (rules 2 and 3).
+
+If I want a real consistency check for Milestone 4, I should label these 30
+myself, or relabel a sample of my own 210 posts without looking at the existing
+labels.
 
 
 

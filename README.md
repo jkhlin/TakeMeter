@@ -323,6 +323,28 @@ were the random draw meant for my unaided cold check. Claude labelled those too,
 so they are marked `pre-labelled, checked; was the cold draw but not labelled
 unaided`. The posts were also collected by Claude, through the HN API.
 
+**Unit 6: what Claude did, and what I should check**
+
+Claude ran everything in unit 6 for me, from a script using the notebook's own
+cells, and wrote the drafts of the README text for it. Three things matter for
+reading my results:
+
+- *The staff labels are Claude's, not mine.* I asked Claude to do Milestone 3.
+  It read `data/staff_taxonomy.md`, labelled the 30 posts, saved
+  `my_staff_labels.csv` before the staff labels were opened, and then matched
+  staff on 30 of 30. That says Claude applied the staff rules well. It says
+  nothing about whether I label consistently, so I treated criterion 3 as
+  untested, not met.
+- *The baseline prediction wasn't blind.* Claude wrote the prediction in
+  Baseline vs. Trained after it had already opened `results.json`, and the
+  README says so next to it.
+- *Spotting the pattern in my errors was Claude's reading of the numbers.* The
+  clue was that accuracy on two seeds was exactly 14/32, the `hot_take` share of
+  the test split. That showed the model was predicting one label for every post,
+  which pointed at training length. The change that came from it was 3 to 8
+  epochs, and accuracy went from 0.438 to 0.656 on those seeds. I haven't
+  checked that reading myself beyond reading the confusion matrices.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.
@@ -674,13 +696,32 @@ missed criterion.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+**Criterion 1 (accuracy ≥ 0.70 on every seed): MISSED, 0.688 / 0.656 / 0.656.**
+It's one to two posts short on 32. What I'd do: train longer or raise the
+learning rate again, because validation loss was still falling slowly at epoch 8
+(about 0.72 on every seed), and then add `analysis` posts. Why I stopped: this
+milestone allows one change, and I used it on epochs. I didn't try a second value
+because that would be tuning against the test split.
 
+**Criterion 2 (every label F1 ≥ 0.60, `analysis` ≥ 0.50): MISSED.** `analysis` is
+0.462 and 0.308 on seeds 42 and 7, and `reaction` is 0.556 on seed 7; only seed
+2024 passes. What I'd do: collect about 30 more `analysis` posts, since it has
+the fewest training rows (37), and check my own `analysis` / `hot_take` labels
+blind. Why I stopped: adding posts means collecting and labelling them with the
+same care as the first 210, and I didn't do that in this unit.
+
+**Criterion 3 (agree with staff on ≥ 24 of 30): untested.** The 30/30 was
+Claude's. What I'd do: label the 30 staff posts myself, without looking at
+`my_staff_labels.csv`, and rerun `agreement.py`. Why I stopped: that's the one
+step only I can do, and I haven't done it.
 
 **The gap between what I meant my labels to capture and what the model
-learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
-
-
+learned:** I meant `analysis` to mean that a checkable fact carries the
+argument, but the seed-42 matrix shows the model found only 3 of the 8 real
+`analysis` posts and called 4 of them `hot_take`, so it has not learned whether
+the fact carries the argument. It does best where the surface cues are plainest, getting 8 of
+10 `reaction` and 11 of 14 `hot_take` right, which suggests it's keying on first-person feeling versus
+bare assertion rather than on the fact-versus-decoration rule I wrote down.
 
 <!-- ═════════════════════════════════════════════════════════════════════
 

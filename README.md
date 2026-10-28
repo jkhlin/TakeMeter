@@ -337,12 +337,18 @@ unaided`. The posts were also collected by Claude, through the HN API.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.281 | 0.625 | +0.344 |
+| Macro F1 | 0.181 | 0.483 | +0.302 |
+| F1 — `analysis` | 0.410 | 0.000 | -0.410 |
+| F1 — `hot_take` | 0.133 | 0.700 | +0.567 |
+| F1 — `reaction` | 0.000 | 0.750 | +0.750 |
+
+Both columns are scored on the same 32 held-out posts (`test_split.csv`). The baseline uses the definitions in `label_definitions.txt`. A bare-label-names run scored higher (accuracy 0.375, macro F1 0.295), so my definitions didn't help the zero-shot model.
 
 **What I predicted before I looked:**
+I expect the trained model to beat the baseline most on `reaction` and `hot_take`, where the zero-shot model scored 0.000 and 0.133 F1 with my long definitions, because fine-tuning learns what those posts look like instead of matching them against a sentence-long definition, and the gap to be smallest on `analysis`, where the baseline was strongest (0.410).
+
+*Note: this prediction was drafted by Claude from the baseline numbers, after it had already opened `results.json` while checking the repo, so it isn't a fully blind prediction.*
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 

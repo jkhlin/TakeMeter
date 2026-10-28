@@ -1,0 +1,194 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 32,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 32,
+    "accuracy": 0.28125,
+    "f1_macro": 0.1811965811965812,
+    "per_label": {
+      "analysis": {
+        "precision": 0.25806451612903225,
+        "recall": 1.0,
+        "f1": 0.41025641025641024,
+        "support": 8
+      },
+      "hot_take": {
+        "precision": 1.0,
+        "recall": 0.07142857142857142,
+        "f1": 0.13333333333333333,
+        "support": 14
+      },
+      "reaction": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Sometimes, I really wonder how the advertising industry actually earns their bread.\n\nBy which I don't mean how they provide a service, in exchange for monetary compensation, in exchange for goods (bread).\n\nI mean I wonder how they earn it.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I've been thinking about migration out of G* for a while already and this post was a breaking point to start the migration. Thank you!\n\nI've purchased personal domain with my country code and picked Fastmail as provided for now (since many folks here gave good feedback).",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I agree that devices/internet/AI can pull you away from the life around you. In my apartment building, though, we have a group chat to coordinate laundry schedules for the laundry machines on the first floor. It started during Covid and continued even after and with new people moving in. It's turned into a nice, helpful conversation about not only laundry but packages and street parking and more. It's helped to get to know the neighbors better than without.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I understand people's outrage at this invasion of privacy - but honestly why do people think that anything they have ever done online hasn't already been tracked and recorded (not being paranoid or anything - just being realistic).\n\nThere is a lot of value in figuring out who someone is, what they like and don't like and what they are likely to buy (ad networks/trackers etc.).\n\nHence you MUST assume that everything you have done, and ever will do, is, for all intents and purposes, PUBLIC FOREVERMORE.\n\nNot \"whisper public\" but shared across YouTube public with 100 MILLION PEOPLE.\n\nOnce you assume that situation you attempt to mitigate possible pitfalls and these things don't bother you so much (they still will - but the sting isn't nearly as strong).\n\nAnd no - the web isn't going in the opposite direction - privacy is dead - long live privacy!\n\nYou can try and shame or regulate it away - but seeing the web as it is today and where it's going - there is no turning back.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Designing some chartreuse lamps, quickly zip away from their radiuses. I just successfully exited the \"lime light\"!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I was very excited to try the new GPT-6 Luna on our internal evals for a cybersecurity application. The 50% cost savings over 5.6-Luna sounded like an easy win.\n\nUnfortunately in our benchmarks 6-Luna uses way more tokens to produce the same result at a given thinking effort, and takes longer to do so. The additional tokens wipe out the cost savings for us. Has anyone else seen this?",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Glad to see the upgraded version, I hope they'll open ordering in Italy soon!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "> Early in your career, you can learn 10x more in a supportive team in 1 year, than coding on your own (or with minimal feedback) for 5 years.\n\nSpot on!!!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Yes!!! Now I can make my HN app! I don't like the ones that are on the market now (on Android platform)",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "\"Chubby Little Loser\" https://www.youtube.com/watch?v=ge7S6-Ta3yg easily my favourite Bowie performance.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Again, for those complaining about price - the current (and far less capable) Microsoft HoloLens is also $3500. I've personally used and interacted with the HoloLens and was thoroughly impressed, however the leaps in optics & tracking Apple has pulled off make the Vision Pro quite compelling.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Wow! That is one scary vulnerability. Glad we have smart people like this to find such problems before the bad guys do. Well done!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Thinking more about this, it's also possible that the candidate failed on understanding what the screener wanted, and giving it to him.\nIf the question was \"what signal does kill command send by default\" and the candidate hears \"what is the name of the kill signal,\" that's an indicator about important communication skills.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Maybe it's really a good news for Oculus, but if anyone here feel a litter melancholy?\n\nArmadillo Aerospace run out of money and hibernate (2013), id Software had been acquired by ZeniMax Media (2009), id software President Todd Hollenshead has quit after 17 years of service (2013) and there's a long time without really big new Game.\n\nNow John Carmack some kind of working for another company\u2026",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Google is a glorified ad company. That\u2019s it. Nothing else. Nothing new. Nothing special.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Most illustrative part:\n\"Yahoo President Marissa Mayer and the company's legal team kept the order secret from the company's security team.\"\n\nIf you have to hide things from your own security team, it's pretty clear you're doing something very bad and you know it.\n\nAnd my imaginary hat off to Stamos for resigning when he found his boss betrayed user privacy and undermined security. If everybody had such level of integrity, doing shady stuff would be much harder.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "C'mon guys... The kid is not ill. He is angry and pissed of at the world. He has established different society norms for himself and his behaviour is off limits, but he is still in control of his brain and his body. And he understands what he's doing. He is not brain damaged. Don't treat him as one, cuz it would piss me off to.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "These are pretty embarrassingly bad compared to what was already out there. They refuse to do so many simple things that are not remotely illegal or NSFW. So safe they're useless.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I love markdown. I even created my own version which I have become addicted to -> http://blackstag.com/markdown. I'm fairly confident I will be the only one to appreciate my personal version, but hey - It's the ugly child I have come to love.\n\nI'd certainly be interested in switching over to their version, provided some of the noted kinks get worked out.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "How can one be so untactful and 'proposition' via text chat? Someone may take screenshots and go to HR... Weird.",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "The Uber incident has been known for almost a year. There are other instances, mostly undisclosed audits which have shown similar results. One audit revealed $220m in ad spend for a global brand with a +$500m budget had no impact on their results, it was vapor. On the finding of these results, they didn't want public embarrassment or the hit to their share price.\n\nNot everyone in the industry is fraud, not everyone in the industry is a huckster. But most of the industry is people talking up their game and creating a facade, from Brand CMOs to Pubs gaming their performance numbers. Fraud can be reduced, but few want to engage in the rigor and even less want to recognize actual/validated performance when the current fiction suits their purposes more easily.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I guess curating unpolluted text is one of the new jobs GenAI created? /s",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I am going to go out on a whim and say that I think this is intentional. There are a lot of power games being played these days. I am reminded of this quote from Chomsky,\n\n\"There are huge efforts that do go into making people, to borrow Adam Smith\u2019s phrase, \u201cas stupid and ignorant as it is possible for a human being to be.\u201d A lot of the educational system is designed for that, if you think about it, it\u2019s designed for obedience and passivity. From childhood, a lot of it is designed to prevent people from being independent and creative. If you\u2019re independent-minded in school, you\u2019re probably going to get into trouble very early on. That\u2019s not the trait that\u2019s being preferred or cultivated.\" [1]\n\nGoogle is how the masses are \"educated\" these days. There is also the narrative of how students, high school, university, and collage are just googling everything for their tests and exams and not learning everything. (I am one of them)\n\nI am sure SEO spam is part of the problem but there are always multiple narratives going on.\n\n[1] https://chomsky.info/warfare02/",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Small enough is nice but I desperately need an iPhone like battery Android. Battery issue on Android is ridiculous.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I'm a big fan of Bulma, and used it to get started on a project http://pokestop.help\n\nThanks for the write up, with CSS I never know where to start, this helps to think about it.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I don't think it is an original observation but Steve Jobs chose a very capable and worthy successor. Tim Cook gets more impressive each time you hear anything about him.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "This would be even cooler if you could display wind speeds at different elevations above the ground. I am guessing that at a certain elevation you have higher winds that kites might be able to capture energy from.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I don't see this different from what MS used to do with Xbox Live subscriptions in summer... at first the charged $1 for one month, but you have to cancel the subscription before the month ends in order to not being charged again.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "My partner interviewed with Stripe (admittedly not for an engineering role but for an adjacent role) and had a very positive experience. They start in a few weeks. It's fun to idly observe companies interview processes and Stripe's seemed super upstanding and robust. Very responsive all round with a solid offer and flexibility on start time.\n\nFWIW they interviewed with 3 other companies at same time \u2014 all ~$10B-ish companies \u2014 and 2 of them were very negative experiences (slow to respond recruiters, written offer not aligning with initial salary expectations, ...)",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I still don't see anyone offering a viable solution..\n\nThere are a lot of variables that come into play for a generic copyright or IP law that encompasses all creative works. The first of which should probably be scope.\n\nPhysical and non-physical creations; a painting or a jpg; a photo of a painting in jpg format; a photo of a photo of a painting in jpg format.\n\nThe digital work - the internet - has changed the world forever and we're not going back. Some form of \"SOPA\" or \"PIPA\" is inevitable.\n\nThe question is simple: what are you going to do about it?",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Race to the bottom!\n\nAmazon checklist:\n\n1) Import cheap Chinese goods,\n\n2) avoid sales tax,\n\n3) destroy the environment (china),\n\n4) destroy brick and mortar stores,\n\n5) destroy small/medium business.\n\n=== PROFIT!",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "You.com already lists Llama 3 as one of their available LLMs.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    }
+  ]
+}
